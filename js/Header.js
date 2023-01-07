@@ -2,7 +2,7 @@ class Header extends HTMLElement {
   constructor() {
     super();
   }
-    connectedCallback() {
+  connectedCallback() {
     this.innerHTML = `
       <header>
         <div class="header_top">
@@ -13,18 +13,24 @@ class Header extends HTMLElement {
                     </a>
                 </div>
                 <div class="col-md-6 d-flex justify-content-end align-items-center">
-                    <a href="#" class="primary_btn">Login</a>
+                    <a href="../login.html" class="primary_btn">Login</a>
                 </div>
             </div>
         </div>
         <nav id="nav_menu">
           <ul class="d-flex flex-wrap justify-content-center">
-            <li><a href="../Home-Care-management-system/home.html" class="nav_links has_arrow active">Home</a></li>
-            <li><a href="#" class="nav_links">Clients</a></li>
-            <li><a href="#" class="nav_links">Providers</a></li>
+            <li><a href="../home.html" class="nav_links has_arrow ">Home</a></li>
+            <li><a href="../clients.html" class="nav_links">Clients</a></li>
+            <li><a href="../providers.html" class="nav_links">Providers</a></li>
             <li><a href="#" class="nav_links has_arrow">Prior Authorizations</a></li>
             <li><a href="#" class="nav_links has_arrow">Placements</a></li>
-            <li><a href="#" class="nav_links has_arrow">Accounting</a></li>
+            <li>
+                <a href="#" class="nav_links has_arrow">Accounting</a>
+                <div class="Inner_menu">
+                    <a href="#">Account Payable</a>
+                    <a href="#">Accounts Receivable</a>
+                </div>
+            </li>
             <li><a href="#" class="nav_links has_arrow">Billing</a></li>
             <li><a href="#" class="nav_links has_arrow">Reports</a></li>
             <li><a href="#" class="nav_links has_arrow">Setup</a></li>
