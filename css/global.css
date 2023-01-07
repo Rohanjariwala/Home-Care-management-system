@@ -71,6 +71,12 @@ a {
 }
 #main {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+section {
+  flex: 1;
 }
 input,
 .form-select {
@@ -233,7 +239,7 @@ Header .header_bottom div {
 Header #nav_menu li .Inner_menu {
   position: absolute;
   top: 150%;
-  left: 0;
+  left: 6px;
   background: #fff;
   box-shadow: 0 0 7px #22222238;
   min-width: 12.5rem;
@@ -248,6 +254,10 @@ Header #nav_menu li .Inner_menu a {
   font-family: var(--Montserrat);
   font-weight: 500;
   font-size: 0.938rem;
+  transition: all 0;
+}
+Header #nav_menu li .Inner_menu a:hover {
+  background: #e6ebf5;
 }
 Header #nav_menu li .Inner_menu a:not(:last-child) {
   border-bottom: 1px solid #ccc;
