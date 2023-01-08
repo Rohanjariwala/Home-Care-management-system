@@ -1,10 +1,13 @@
-$(function(){
-    var current = location.pathname;
-    $('#nav_menu ul li a').each(function(){
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if($this.attr('href').indexOf(current) !== -1){
-            $this.addClass('active');
-        }
+$(function () {
+  $("#nav_menu ul li a")
+    .filter(function () {
+      return this.href == location.href;
     })
-})
+    .parent()
+    .addClass("active")
+    .siblings()
+    .removeClass("active");
+  $("#nav_menu ul li a").click(function () {
+    $(this).parent().addClass("active").siblings().removeClass("active");
+  });
+});
