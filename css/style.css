@@ -106,9 +106,6 @@
   max-width: 620px;
 }
 /** login page css **/
-/** home page css **/
-
-/** home page css **/
 /** client page css **/
 #client .table_part {
   margin-top: 52px;
@@ -159,3 +156,55 @@
   background: var(--white);
 }
 /** prior-authorizations page css **/
+/** placement page css **/
+#placements .status_show {
+  margin-bottom: 25px;
+}
+#placements .status_show .status_inner {
+  display: flex;
+  align-items: center;
+}
+#placements .status_show .box {
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 8px;
+  border: 1px solid var(--p_blue);
+  margin-right: 12px;
+}
+#placements .status_show .status_text {
+  margin: 0;
+}
+/** placement page css **/
+/** account-payable page css **/
+.advance_btn {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: var(--Montserrat);
+  font-weight: 600;
+  color: var(--p_blue);
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.advance_btn:after {
+  content: "";
+  position: absolute;
+  right: -19px;
+  top: 4px;
+  background: url(../images/blue_arrow.png);
+  background-size: cover;
+  width: 14px;
+  height: 14px;
+  transition: all 0.3s ease;
+}
+.advance_btn.active:after {
+  transform: rotate(180deg);
+}
+.hidden_div {
+  display: none;
+}
+.hidden_div.show {
+  display: block;
+}
+/** account-payable page css **/

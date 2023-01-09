@@ -28,12 +28,17 @@ class Header extends HTMLElement {
                   <li><a href="../patient-assessments.html">Patient Assessments</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="nav_links has_arrow">Placements</a></li>
+            <li>
+                <a href="../placements.html" class="nav_links has_arrow">Placements</a>
+                <ul class="Inner_menu">
+                  <li><a href="../problem-providers.html">Problem Providers</a></li>
+                </ul>
+            </li>
             <li>
                 <a href="#" class="nav_links has_arrow">Accounting</a>
                 <ul class="Inner_menu">
-                  <li><a href="#">Account Payable</a></li>
-                  <li><a href="#">Accounts Receivable</a></li>
+                  <li><a href="../account-Payable.html">Account Payable</a></li>
+                  <li><a href="../account-receivable.html">Accounts Receivable</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav_links has_arrow">Billing</a></li>
