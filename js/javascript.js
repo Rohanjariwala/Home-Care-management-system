@@ -11,3 +11,8 @@ $(function () {
     $(this).parent().addClass("active").siblings().removeClass("active");
   });
 });
+
+$(".advance_btn").click(function () {
+  $(".hidden_div").toggleClass("show");
+  $(this).toggleClass("active");
+});
