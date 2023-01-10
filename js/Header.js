@@ -41,8 +41,18 @@ class Header extends HTMLElement {
                   <li><a href="../account-receivable.html">Accounts Receivable</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="nav_links has_arrow">Billing</a></li>
-            <li><a href="#" class="nav_links has_arrow">Reports</a></li>
+            <li>
+                <a href="../billing.html" class="nav_links has_arrow">Billing</a>
+                <ul class="Inner_menu">
+                  <li><a href="../billing-batch.html">Billing Batch</a></li>
+                  <li><a href="../billing-print-batch.html">Billing Print Batch</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav_links has_arrow">Reports</a>
+                <ul class="Inner_menu">
+                  <li><a href="../activity-report.html">Activity Report</a></li>
+                </ul>
+            </li>
             <li><a href="#" class="nav_links has_arrow">Setup</a></li>
             <li><a href="#" class="nav_links has_arrow">Security</a></li>
             <li><a href="#" class="nav_links has_arrow">Audit</a></li>
