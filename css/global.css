@@ -93,6 +93,25 @@ hr {
 .cancel {
   background: var(--red);
 }
+.tabledata_show {
+  display: flex;
+  justify-content: center;
+}
+.data_btn {
+  padding: 0.813rem 0.75rem;
+  background: rgba(8, 52, 115, 0.1);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: var(--Montserrat);
+  font-weight: 500;
+  margin: 0 3px;
+}
+.data_btn:first-child {
+  border-top-left-radius: 8px;
+}
+.data_btn:last-child {
+  border-top-right-radius: 8px;
+}
 #main {
   position: relative;
   display: flex;
@@ -218,6 +237,15 @@ input[type="radio"] {
   border-radius: 6px;
 }
 /** pill status **/
+/** tab btn **/
+.tab-btn {
+  background: #e1e1e1 !important;
+  color: var(--black);
+}
+.tab-btn.active {
+  background: var(--p_blue) !important;
+}
+/** tab btn **/
 /** header css **/
 Header .header_top {
   padding: 1.188rem 1.25rem;
