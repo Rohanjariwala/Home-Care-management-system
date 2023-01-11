@@ -51,6 +51,16 @@ class Header extends HTMLElement {
             <li><a href="#" class="nav_links has_arrow">Reports</a>
                 <ul class="Inner_menu">
                   <li><a href="../activity-report.html">Activity Report</a></li>
+                  <li><a href="../emergency-report.html">Emergency Report</a></li>
+                  <li><a href="../provider-schedule-update-report.html">Provider Schedule Update Report</a></li>
+                  <li><a href="../Missing-time-sheet-report.html">Missing Time Sheet Report</a></li>
+                  <li><a href="../time-sheet-report.html">Time Sheet Report</a></li>
+                  <li><a href="../potential-fraud-report.html">Potential Fraud Report</a></li>
+                  <li><a href="../pa-report.html">PA Report</a></li>
+                  <li><a href="../bulk-emails-report.html">Bulk Emails Report</a></li>
+                  <li><a href="../marketing-report.html">Marketing Report</a></li>
+                  <li><a href="../login-report.html">Login Report</a></li>
+                  <li><a href="../financial-report.html">Financial Report</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav_links has_arrow">Setup</a></li>

@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Sheet Report</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/Header.js" type="text/javascript"></script>
+    <script src="js/footer.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main id="main">
+      <header-component></header-component>
+      <section id="tsr">
+        <div class="banner text-center">
+          <div class="sub_head">Reports</div>
+          <h1 class="main_head">Time Sheet Report</h1>
+        </div>
+        <div class="container">
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Facility :</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected="selected" value="-1">
+                    Select Facility
+                  </option>
+                  <option value="3">
+                    Care One License Home Care Agency, Inc.
+                  </option>
+                  <option value="2">
+                    Grand Manor Nursing &amp; Rehabilitation Center
+                  </option>
+                  <option value="5">Isabella Geriatric Center</option>
+                  <option value="7">Majestic Touch Home Care Services</option>
+                  <option value="1">TFC Providers Network</option>
+                  <option value="0">TFC Service Bureau</option>
+                  <option value="4">
+                    Trinamco, Inc. (DBA A Plus Care, Inc.)
+                  </option>
+                  <option value="6">
+                    Universal Home Care of New York, Inc.
+                  </option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Year</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Select Year</option>
+                  <option value="1">2020</option>
+                  <option value="2">2021</option>
+                  <option value="3">2022</option>
+                  <option value="3">2023</option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">W/E Date </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Select Week End</option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Representative: </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="0">Select Employee</option>
+                  <option value="788">Adelaida Ochoa</option>
+                  <option value="1554">Anabel Baez</option>
+                  <option value="1797">Celina Betancourt</option>
+                  <option value="674">Donnia Clarke</option>
+                  <option value="3652">Jarine Foster</option>
+                  <option value="322">Jessica Santana</option>
+                  <option value="90">Kamla Ramasar</option>
+                  <option value="96">Kimberly Towles</option>
+                  <option value="3655">Maria B. Murray</option>
+                  <option value="3441">M'Daige Fleurantin</option>
+                  <option value="3659">Mohammad Waleed</option>
+                  <option value="3648">Portia Ravenelle</option>
+                  <option value="164">Ralph Fleurantin</option>
+                  <option value="3176">Samantha Alexander</option>
+                  <option value="3">Sasha Vaysberg</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Payor: </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="0">Select Payor</option>
+                  <option value="98">
+                    A+ Care, Inc. Compliance - HHA All, NY
+                  </option>
+                  <option value="121">
+                    A+ Care, Inc. Compliance - LPN All, NY
+                  </option>
+                  <option value="132">
+                    A+ Care, Inc. Compliance - PCA All, NY
+                  </option>
+                  <option value="126">
+                    A+ Care, Inc. Compliance - RN All, NY
+                  </option>
+                  <option value="122">
+                    A+ Care, Inc. Compliance-CDPAS All, NY
+                  </option>
+                  <option value="124">
+                    A+ Care, Inc. Do Not Use Bronx, NY
+                  </option>
+                  <option value="127">
+                    A+ Care, Inc. Do Not Use Kings, NY
+                  </option>
+                  <option value="123">
+                    A+ Care, Inc. Do Not Use Kings, NY
+                  </option>
+                  <option value="134">
+                    A+ Care, Inc. Do not Use Kings, NY
+                  </option>
+                  <option value="133">
+                    A+ Care, Inc. Do Not Use New York, NY
+                  </option>
+                  <option value="131">
+                    A+ Care, Inc. Do Not Use Westchester, NY
+                  </option>
+                  <option value="125">
+                    A+ Care, Inc. Do Not Use Westchester, NY
+                  </option>
+                  <option value="128">
+                    A+ Care, Inc. Do Not Use-1 Westchester, NY
+                  </option>
+                  <option value="157">
+                    A+ Care, Inc. LPN - Nursing Visit All, NY
+                  </option>
+                  <option value="155">
+                    A+ Care, Inc. Nursing Initial Eval All, NY
+                  </option>
+                  <option value="135">
+                    A+ Care, Inc. RN Reassessment All, NY
+                  </option>
+                  <option value="165">
+                    Aetna Health Management LPN All, NY
+                  </option>
+                  <option value="781">
+                    Aetna Health Management LPN Rate Westchester, NY
+                  </option>
+                  <option value="765">
+                    Aetna Health Management LPN Reg Rate All, NY
+                  </option>
+                  <option value="782">
+                    Aetna Health Management RN @ LPN Rate Albany, NY
+                  </option>
+                  <option value="783">
+                    Aetna Health Management RN @ LPN RATE Westchester, NY
+                  </option>
+                  <option value="764">
+                    Aetna Health Management RN Reg Rate All, NY
+                  </option>
+                  <option value="242">
+                    Affinity Health Plan LPN - Peds All, NY
+                  </option>
+                  <option value="225">
+                    Affinity Health Plan LPN Peds Rate - 2 All, NY
+                  </option>
+                  <option value="203">
+                    Affinity Health Plan LPN Peds Rate All, NY
+                  </option>
+                  <option value="214">
+                    AgeWell New York CDPAS-PCA All, NY
+                  </option>
+                  <option value="192">AgeWell New York HHA All, NY</option>
+                  <option value="193">
+                    AgeWell New York HHA Shared All, NY
+                  </option>
+                  <option value="195">
+                    AgeWell New York Live-In Shared Per Diem All, NY
+                  </option>
+                  <option value="189">
+                    AgeWell New York LPN Visit All, NY
+                  </option>
+                  <option value="191">
+                    AgeWell New York LPN-Visit All, NY
+                  </option>
+                  <option value="152">AgeWell New York PCA All, NY</option>
+                  <option value="208">AgeWell New York PCA All, NY</option>
+                  <option value="209">AgeWell New York PCA All, NY</option>
+                  <option value="194">
+                    AgeWell New York PCA Shared All, NY
+                  </option>
+                  <option value="158">
+                    AgeWell New York RN Initial Evaluation All, NY
+                  </option>
+                  <option value="210">
+                    AgeWell New York RN Nurse Assesment All, NY
+                  </option>
+                  <option value="188">AgeWell New York RN Visit All, NY</option>
+                  <option value="190">AgeWell New York RN Visit All, NY</option>
+                  <option value="211">AgeWell New York T1030 All, NY</option>
+                  <option value="105">Alpha Care LPN Queens, NY</option>
+                  <option value="178">
+                    Alpha Care of New York PCA All, NY
+                  </option>
+                  <option value="179">
+                    Alpha Care of New York PCA-Live In All, NY
+                  </option>
+                  <option value="101">Alpha Care PCA New York, NY</option>
+                  <option value="812">
+                    Anthem Blue Cross Blue Shield LPN All, NY
+                  </option>
+                  <option value="813">
+                    Anthem Blue Cross Blue Shield RN Reg Rate All, NY
+                  </option>
+                  <option value="169">ArchCare RN-Adult All, NY</option>
+                  <option value="446">
+                    CenterLight Healthcare, Inc. cdpa basic 2 client Bronx, NY
+                  </option>
+                  <option value="448">
+                    CenterLight Healthcare, Inc. cdpa basic 2 client Kings, NY
+                  </option>
+                  <option value="451">
+                    CenterLight Healthcare, Inc. cdpa basic 2 client Nassau, NY
+                  </option>
+                  <option value="445">
+                    CenterLight Healthcare, Inc. cdpa basic 2 client New York,
+                    NY
+                  </option>
+                  <option value="447">
+                    CenterLight Healthcare, Inc. cdpa basic 2 client Queens, NY
+                  </option>
+                  <option value="450">
+                    CenterLight Healthcare, Inc. cdpa basic 2 client Suffolk, NY
+                  </option>
+                  <option value="449">
+                    CenterLight Healthcare, Inc. cdpa basic 2 client
+                    Westchester, NY
+                  </option>
+                  <option value="439">
+                    CenterLight Healthcare, Inc. CDPA BASIC Bronx, NY
+                  </option>
+                  <option value="441">
+                    CenterLight Healthcare, Inc. CDPA BASIC Kings, NY
+                  </option>
+                  <option value="444">
+                    CenterLight Healthcare, Inc. CDPA BASIC Nassau, NY
+                  </option>
+                  <option value="438">
+                    CenterLight Healthcare, Inc. CDPA BASIC New York, NY
+                  </option>
+                  <option value="440">
+                    CenterLight Healthcare, Inc. CDPA BASIC Queens, NY
+                  </option>
+                  <option value="443">
+                    CenterLight Healthcare, Inc. CDPA BASIC Suffolk, NY
+                  </option>
+                  <option value="442">
+                    CenterLight Healthcare, Inc. CDPA BASIC Westchester, NY
+                  </option>
+                  <option value="453">
+                    CenterLight Healthcare, Inc. cdpa live in Bronx, NY
+                  </option>
+                  <option value="455">
+                    CenterLight Healthcare, Inc. cdpa live in Kings, NY
+                  </option>
+                  <option value="458">
+                    CenterLight Healthcare, Inc. cdpa live in Nassau, NY
+                  </option>
+                  <option value="452">
+                    CenterLight Healthcare, Inc. cdpa live in New York, NY
+                  </option>
+                  <option value="454">
+                    CenterLight Healthcare, Inc. cdpa live in Queens, NY
+                  </option>
+                  <option value="457">
+                    CenterLight Healthcare, Inc. cdpa live in Suffolk, NY
+                  </option>
+                  <option value="460">
+                    CenterLight Healthcare, Inc. cdpa live in two client Bronx,
+                    NY
+                  </option>
+                  <option value="462">
+                    CenterLight Healthcare, Inc. cdpa live in two client Kings,
+                    NY
+                  </option>
+                  <option value="465">
+                    CenterLight Healthcare, Inc. cdpa live in two client Nassau,
+                    NY
+                  </option>
+                  <option value="459">
+                    CenterLight Healthcare, Inc. cdpa live in two client New
+                    York, NY
+                  </option>
+                  <option value="461">
+                    CenterLight Healthcare, Inc. cdpa live in two client Queens,
+                    NY
+                  </option>
+                  <option value="464">
+                    CenterLight Healthcare, Inc. cdpa live in two client
+                    Suffolk, NY
+                  </option>
+                  <option value="463">
+                    CenterLight Healthcare, Inc. cdpa live in two client
+                    Westchester, NY
+                  </option>
+                  <option value="456">
+                    CenterLight Healthcare, Inc. cdpa live in Westchester, NY
+                  </option>
+                  <option value="394">
+                    CenterLight Healthcare, Inc. HHA New York, NY
+                  </option>
+                  <option value="379">
+                    CenterLight Healthcare, Inc. HHA 2 Client Bronx, NY
+                  </option>
+                  <option value="398">
+                    CenterLight Healthcare, Inc. HHA 2 Client Kings, NY
+                  </option>
+                  <option value="400">
+                    CenterLight Healthcare, Inc. hha 2 client Nassau, NY
+                  </option>
+                  <option value="378">
+                    CenterLight Healthcare, Inc. HHA 2 Client New York, NY
+                  </option>
+                  <option value="399">
+                    CenterLight Healthcare, Inc. hha 2 client Queens, NY
+                  </option>
+                  <option value="380">
+                    CenterLight Healthcare, Inc. HHa 2 Client Westchester, NY
+                  </option>
+                  <option value="376">
+                    CenterLight Healthcare, Inc. HHA Bronx, NY
+                  </option>
+                  <option value="395">
+                    CenterLight Healthcare, Inc. HHA Kings, NY
+                  </option>
+                  <option value="381">
+                    CenterLight Healthcare, Inc. HHA Live -In Bronx, NY
+                  </option>
+                  <option value="403">
+                    CenterLight Healthcare, Inc. HHA Live in Kings, NY
+                  </option>
+                  <option value="405">
+                    CenterLight Healthcare, Inc. HHA Live in Nassau, NY
+                  </option>
+                  <option value="408">
+                    CenterLight Healthcare, Inc. HHA Live in Nassau, NY
+                  </option>
+                  <option value="401">
+                    CenterLight Healthcare, Inc. HHA Live in New York, NY
+                  </option>
+                  <option value="402">
+                    CenterLight Healthcare, Inc. HHA Live in Queens, NY
+                  </option>
+                  <option value="404">
+                    CenterLight Healthcare, Inc. HHA Live in Suffolk, NY
+                  </option>
+                  <option value="413">
+                    CenterLight Healthcare, Inc. HHA Live in Two Client Kings,
+                    NY
+                  </option>
+                  <option value="415">
+                    CenterLight Healthcare, Inc. HHA Live in Two Client Nassau,
+                    NY
+                  </option>
+                  <option value="410">
+                    CenterLight Healthcare, Inc. HHA Live in Two Client New
+                    York, NY
+                  </option>
+                  <option value="412">
+                    CenterLight Healthcare, Inc. HHA Live in Two Client Queens,
+                    NY
+                  </option>
+                  <option value="414">
+                    CenterLight Healthcare, Inc. HHA Live in Two Client Suffolk,
+                    NY
+                  </option>
+                  <option value="383">
+                    CenterLight Healthcare, Inc. HHA Live-In 2 Client Bronx, NY
+                  </option>
+                  <option value="384">
+                    CenterLight Healthcare, Inc. HHA Live-In 2 Client
+                    Westchester, NY
+                  </option>
+                  <option value="382">
+                    CenterLight Healthcare, Inc. HHA Live-In Westchester, NY
+                  </option>
+                  <option value="397">
+                    CenterLight Healthcare, Inc. HHA Nassau, NY
+                  </option>
+                  <option value="396">
+                    CenterLight Healthcare, Inc. HHA Queens, NY
+                  </option>
+                  <option value="406">
+                    CenterLight Healthcare, Inc. HHA Suffolk, NY
+                  </option>
+                  <option value="407">
+                    CenterLight Healthcare, Inc. HHA Two Client Suffolk, NY
+                  </option>
+                  <option value="377">
+                    CenterLight Healthcare, Inc. HHA Westchester, NY
+                  </option>
+                  <option value="385">
+                    CenterLight Healthcare, Inc. PCA Level II basic Bronx, NY
+                  </option>
+                  <option value="386">
+                    CenterLight Healthcare, Inc. PCA Level II Basic Westchester,
+                    NY
+                  </option>
+                  <option value="393">
+                    CenterLight Healthcare, Inc. PCS Level 2 Live In 2 Client
+                    Bronx, NY
+                  </option>
+                  <option value="390">
+                    CenterLight Healthcare, Inc. PCS Level 2 Live-In Bronx, NY
+                  </option>
+                  <option value="387">
+                    CenterLight Healthcare, Inc. PCS Level II Basic 2 Client
+                    Bronx, NY
+                  </option>
+                  <option value="389">
+                    CenterLight Healthcare, Inc. PCS Level II Basic 2 Client
+                    Westchester, NY
+                  </option>
+                  <option value="417">
+                    CenterLight Healthcare, Inc. PCS Level II Basic Bronx, NY
+                  </option>
+                  <option value="419">
+                    CenterLight Healthcare, Inc. PCS Level II Basic Kings, NY
+                  </option>
+                  <option value="421">
+                    CenterLight Healthcare, Inc. PCS Level II Basic Nassau, NY
+                  </option>
+                  <option value="416">
+                    CenterLight Healthcare, Inc. PCS Level II Basic New York, NY
+                  </option>
+                  <option value="418">
+                    CenterLight Healthcare, Inc. PCS Level II Basic Queens, NY
+                  </option>
+                  <option value="420">
+                    CenterLight Healthcare, Inc. PCS Level II Basic Suffolk, NY
+                  </option>
+                  <option value="425">
+                    CenterLight Healthcare, Inc. pcs level ii basic two client
+                    Kings, NY
+                  </option>
+                  <option value="427">
+                    CenterLight Healthcare, Inc. pcs level ii basic two client
+                    Nassau, NY
+                  </option>
+                  <option value="422">
+                    CenterLight Healthcare, Inc. pcs level ii basic two client
+                    New York, NY
+                  </option>
+                  <option value="424">
+                    CenterLight Healthcare, Inc. pcs level ii basic two client
+                    Queens, NY
+                  </option>
+                  <option value="426">
+                    CenterLight Healthcare, Inc. pcs level ii basic two client
+                    Suffolk, NY
+                  </option>
+                  <option value="392">
+                    CenterLight Healthcare, Inc. PCS Level II Live In 2 Client
+                    Westchester, NY
+                  </option>
+                  <option value="430">
+                    CenterLight Healthcare, Inc. pcs level ii live in Kings, NY
+                  </option>
+                  <option value="432">
+                    CenterLight Healthcare, Inc. pcs level ii live in Nassau, NY
+                  </option>
+                  <option value="428">
+                    CenterLight Healthcare, Inc. pcs level ii live in New York,
+                    NY
+                  </option>
+                  <option value="429">
+                    CenterLight Healthcare, Inc. pcs level ii live in Queens, NY
+                  </option>
+                  <option value="431">
+                    CenterLight Healthcare, Inc. pcs level ii live in Suffolk,
+                    NY
+                  </option>
+                  <option value="435">
+                    CenterLight Healthcare, Inc. pcs level ii live in two client
+                    Kings, NY
+                  </option>
+                  <option value="437">
+                    CenterLight Healthcare, Inc. pcs level ii live in two client
+                    Nassau, NY
+                  </option>
+                  <option value="433">
+                    CenterLight Healthcare, Inc. pcs level ii live in two client
+                    New York, NY
+                  </option>
+                  <option value="434">
+                    CenterLight Healthcare, Inc. pcs level ii live in two client
+                    Queens, NY
+                  </option>
+                  <option value="436">
+                    CenterLight Healthcare, Inc. pcs level ii live in two client
+                    Suffolk, NY
+                  </option>
+                  <option value="391">
+                    CenterLight Healthcare, Inc. PCS Level II Live-In
+                    Westchester, NY
+                  </option>
+                  <option value="362">
+                    Centers Plan For Healthy Ling, LLC CDPAP Bronx, NY
+                  </option>
+                  <option value="360">
+                    Centers Plan For Healthy Ling, LLC CDPAP Kings, NY
+                  </option>
+                  <option value="365">
+                    Centers Plan For Healthy Ling, LLC CDPAP Nassau, NY
+                  </option>
+                  <option value="361">
+                    Centers Plan For Healthy Ling, LLC CDPAP New York, NY
+                  </option>
+                  <option value="363">
+                    Centers Plan For Healthy Ling, LLC CDPAP Queens, NY
+                  </option>
+                  <option value="364">
+                    Centers Plan For Healthy Ling, LLC CDPAP Richmond, NY
+                  </option>
+                  <option value="366">
+                    Centers Plan For Healthy Ling, LLC CDPAP Suffolk, NY
+                  </option>
+                  <option value="367">
+                    Centers Plan For Healthy Ling, LLC CDPAP Westchester, NY
+                  </option>
+                  <option value="345">
+                    Centers Plan For Healthy Ling, LLC pca 2 Client live-in reg
+                    rate Bronx, NY
+                  </option>
+                  <option value="346">
+                    Centers Plan For Healthy Ling, LLC pca 2 Client live-in reg
+                    rate Kings, NY
+                  </option>
+                  <option value="350">
+                    Centers Plan For Healthy Ling, LLC pca 2 Client live-in reg
+                    rate Nassau, NY
+                  </option>
+                  <option value="347">
+                    Centers Plan For Healthy Ling, LLC pca 2 Client live-in reg
+                    rate New York, NY
+                  </option>
+                  <option value="348">
+                    Centers Plan For Healthy Ling, LLC pca 2 Client live-in reg
+                    rate Queens, NY
+                  </option>
+                  <option value="349">
+                    Centers Plan For Healthy Ling, LLC pca 2 Client live-in reg
+                    rate Richmond, NY
+                  </option>
+                  <option value="351">
+                    Centers Plan For Healthy Ling, LLC pca 2 Client live-in reg
+                    rate Suffolk, NY
+                  </option>
+                  <option value="352">
+                    Centers Plan For Healthy Ling, LLC pca 2 Client live-in reg
+                    rate Suffolk, NY
+                  </option>
+                  <option value="353">
+                    Centers Plan For Healthy Ling, LLC pca 2 Client live-in reg
+                    rate Westchester, NY
+                  </option>
+                  <option value="331">
+                    Centers Plan For Healthy Ling, LLC PCA 2 Member Reg Rate
+                    Bronx, NY
+                  </option>
+                  <option value="332">
+                    Centers Plan For Healthy Ling, LLC PCA 2 Member Reg Rate
+                    Kings, NY
+                  </option>
+                  <option value="333">
+                    Centers Plan For Healthy Ling, LLC PCA 2 Member Reg Rate New
+                    York, NY
+                  </option>
+                  <option value="334">
+                    Centers Plan For Healthy Ling, LLC PCA 2 Member Reg Rate
+                    Queens, NY
+                  </option>
+                  <option value="336">
+                    Centers Plan For Healthy Ling, LLC PCA 2 Member Reg Rate
+                    Richmond, NY
+                  </option>
+                  <option value="359">
+                    Centers Plan For Healthy Ling, LLC PCA Bronx, NY
+                  </option>
+                  <option value="337">
+                    Centers Plan For Healthy Ling, LLC PCA Live -In Reg Rate
+                    Bronx, NY
+                  </option>
+                  <option value="338">
+                    Centers Plan For Healthy Ling, LLC pca live -in reg rate
+                    Kings, NY
+                  </option>
+                  <option value="342">
+                    Centers Plan For Healthy Ling, LLC pca live -in reg rate
+                    Nassau, NY
+                  </option>
+                  <option value="339">
+                    Centers Plan For Healthy Ling, LLC pca live -in reg rate New
+                    York, NY
+                  </option>
+                  <option value="340">
+                    Centers Plan For Healthy Ling, LLC pca live -in reg rate
+                    Queens, NY
+                  </option>
+                  <option value="341">
+                    Centers Plan For Healthy Ling, LLC pca live -in reg rate
+                    Richmond, NY
+                  </option>
+                  <option value="343">
+                    Centers Plan For Healthy Ling, LLC pca live -in reg rate
+                    Suffolk, NY
+                  </option>
+                  <option value="344">
+                    Centers Plan For Healthy Ling, LLC pca live -in reg rate
+                    Westchester, NY
+                  </option>
+                  <option value="321">
+                    Centers Plan For Healthy Ling, LLC PCA Reg Rate Bronx, NY
+                  </option>
+                  <option value="324">
+                    Centers Plan For Healthy Ling, LLC PCA Reg Rate Kings, NY
+                  </option>
+                  <option value="328">
+                    Centers Plan For Healthy Ling, LLC PCA Reg Rate Nassau, NY
+                  </option>
+                  <option value="325">
+                    Centers Plan For Healthy Ling, LLC PCA Reg Rate New York, NY
+                  </option>
+                  <option value="326">
+                    Centers Plan For Healthy Ling, LLC PCA Reg Rate Queens, NY
+                  </option>
+                  <option value="327">
+                    Centers Plan For Healthy Ling, LLC PCA Reg Rate Richmond, NY
+                  </option>
+                  <option value="329">
+                    Centers Plan For Healthy Ling, LLC PCA Reg Rate Suffolk, NY
+                  </option>
+                  <option value="330">
+                    Centers Plan For Healthy Ling, LLC PCA Reg Rate Westchester,
+                    NY
+                  </option>
+                  <option value="301">
+                    Children's Aid Every Step of The Way I FERNANDEZ PRIVATE
+                    CONTRACT All, NY
+                  </option>
+                  <option value="304">
+                    Children's Aid Every Step of The Way RN Rate All, NY
+                  </option>
+                  <option value="777">Cigna Wound Care Visit All, NY</option>
+                  <option value="409">
+                    Elder Plan Home First LPN Reg Rate All, NY
+                  </option>
+                  <option value="354">
+                    Elder Plan Home First LPN Reg Rate Bronx, NY
+                  </option>
+                  <option value="789">
+                    Elder Plan Home First LPN Reg Rate Bronx, NY
+                  </option>
+                  <option value="368">
+                    Elder Plan Home First RN @ LPN Rate Bronx, NY
+                  </option>
+                  <option value="759">
+                    Elder Plan Home First RN @ LPN Rate All, NY
+                  </option>
+                  <option value="164">
+                    ElderServe Health, Inc. LPN All, NY
+                  </option>
+                  <option value="370">EMBLEMHealth LPN - Pesd All, NY</option>
+                  <option value="204">Empire BC BS LPN All, NY</option>
+                  <option value="760">
+                    Empire Blue Cross Blue Shield HealthPlus LPN Rate All, NY
+                  </option>
+                  <option value="244">
+                    Empire Blue Cross Blue Shield HealthPlus LPN Rate All, NY
+                  </option>
+                  <option value="761">
+                    Empire Blue Cross Blue Shield HealthPlus RN All, NY
+                  </option>
+                  <option value="303">
+                    Empire Blue Cross Blue Shield HealthPlus SCA- Giovanna
+                    Jaquez All, NY
+                  </option>
+                  <option value="302">
+                    Empire Blue Cross Blue Shield HealthPlus SCA- ISABELLA
+                    FERNANDEZ Westchester, NY
+                  </option>
+                  <option value="218">
+                    Fidelis Care New York 1st RN Assessment All, NY
+                  </option>
+                  <option value="231">
+                    Fidelis Care New York CDPAS All, NY
+                  </option>
+                  <option value="200">
+                    Fidelis Care New York do not use All, NY
+                  </option>
+                  <option value="762">
+                    Fidelis Care New York Live-in PCA Level 2 Westchester, NY
+                  </option>
+                  <option value="217">
+                    Fidelis Care New York LPN Westchester, NY
+                  </option>
+                  <option value="197">
+                    Fidelis Care New York LPN - Peds All, NY
+                  </option>
+                  <option value="219">Fidelis Care New York LPN All, NY</option>
+                  <option value="220">Fidelis Care New York LPN All, NY</option>
+                  <option value="251">
+                    Fidelis Care New York LPN Peds Bronx, NY
+                  </option>
+                  <option value="215">
+                    Fidelis Care New York LPN-High Tech Rate All, NY
+                  </option>
+                  <option value="183">
+                    Fidelis Care New York Nursing Supervisor, Per diem All, NY
+                  </option>
+                  <option value="232">
+                    Fidelis Care New York Nursing Supervisor, Per Diem All, NY
+                  </option>
+                  <option value="247">Fidelis Care New York PCA All, NY</option>
+                  <option value="184">Fidelis Care New York PCA All, NY</option>
+                  <option value="185">
+                    Fidelis Care New York PCA Level 2 All, NY
+                  </option>
+                  <option value="187">
+                    Fidelis Care New York PCA Live-In Per Diem All, NY
+                  </option>
+                  <option value="369">
+                    Fidelis Care New York Reg Rate All, NY
+                  </option>
+                  <option value="371">
+                    Fidelis Care New York RN @ LPN Rate New York, NY
+                  </option>
+                  <option value="374">
+                    Fidelis Care New York Rn @LPN Rate New York, NY
+                  </option>
+                  <option value="221">Fidelis Care New York RN All, NY</option>
+                  <option value="810">
+                    Fidelis Care New York RN-Adult All, NY
+                  </option>
+                  <option value="216">
+                    Fidelis Care New York RN-High Tech Rate Westchester, NY
+                  </option>
+                  <option value="811">
+                    Fidelis Care New York RN-Peds All, NY
+                  </option>
+                  <option value="206">Fidelis Ins. LPN All, NY</option>
+                  <option value="104">Fidelis Ins. LPN Rate Albany, NY</option>
+                  <option value="95">Fidelis Ins. LPN- Adult Kings, NY</option>
+                  <option value="246">Fidelis Ins. PCA All, NY</option>
+                  <option value="186">
+                    Fidelis Ins. PCA Level 2 Multi Member All, NY
+                  </option>
+                  <option value="207">Health First CDPAS-PCA All, NY</option>
+                  <option value="92">
+                    Health First Claims LPN- Adult Albany, NY
+                  </option>
+                  <option value="141">Health First Claims LPN Bronx, NY</option>
+                  <option value="103">Health First Claims LPN All, NY</option>
+                  <option value="140">
+                    Health First Claims LPN Services Bronx, NY
+                  </option>
+                  <option value="96">
+                    Health First Claims LPN-Pediatric Kings, NY
+                  </option>
+                  <option value="106">
+                    Health First Claims RN Peds Bronx, NY
+                  </option>
+                  <option value="97">
+                    Health First Claims RN Peds Rate Bronx, NY
+                  </option>
+                  <option value="91">Health First LPN-Peds Bronx, NY</option>
+                  <option value="163">Health First PCA All, NY</option>
+                  <option value="119">Health First PCA Bronx, NY</option>
+                  <option value="196">Health First PCA Live-IN All, NY</option>
+                  <option value="145">
+                    ICS Independent Care System PCA (SCA) Bronx, NY
+                  </option>
+                  <option value="226">
+                    ICS Independent Care System PCA All, NY
+                  </option>
+                  <option value="239">
+                    ICS Independent Care System PCA All, NY
+                  </option>
+                  <option value="182">
+                    Independent Care System LPN All, NY
+                  </option>
+                  <option value="129">
+                    Independent Care System LPN Queens, NY
+                  </option>
+                  <option value="90">
+                    Independent Care System LPN-100151 Kings, NY
+                  </option>
+                  <option value="93">
+                    Independent Care System LPN-Adult Kings, NY
+                  </option>
+                  <option value="295">Integra CDPAP Bronx, NY</option>
+                  <option value="297">Integra CDPAP Kings, NY</option>
+                  <option value="299">Integra CDPAP Nassau, NY</option>
+                  <option value="294">Integra CDPAP New York, NY</option>
+                  <option value="296">Integra CDPAP Queens, NY</option>
+                  <option value="298">Integra CDPAP Richmond, NY</option>
+                  <option value="300">Integra CDPAP Suffolk, NY</option>
+                  <option value="136">INTEGRA HHA All, NY</option>
+                  <option value="154">
+                    INTEGRA HHA Live in Per Diem All, NY
+                  </option>
+                  <option value="144">Integra LPN All, NY</option>
+                  <option value="160">Integra LPN All, NY</option>
+                  <option value="161">INTEGRA LPN New York, NY</option>
+                  <option value="137">Integra MLTC HHA Queens, NY</option>
+                  <option value="156">INTEGRA Nursing Visit All, NY</option>
+                  <option value="153">
+                    INTEGRA PCA - Live-In Per Diem All, NY
+                  </option>
+                  <option value="142">INTEGRA PCA All, NY</option>
+                  <option value="289">Integra PCA Kings, NY</option>
+                  <option value="775">Integra PCA Level 2 Queens, NY</option>
+                  <option value="286">Integra PCA Level 2 Bronx, NY</option>
+                  <option value="290">Integra PCA Live -In Queens, NY</option>
+                  <option value="305">Integra PCA Live-IN New York, NY</option>
+                  <option value="292">Integra PCA Nassau, NY</option>
+                  <option value="288">Integra PCA New York, NY</option>
+                  <option value="287">INTEGRA PCA New York, NY</option>
+                  <option value="291">Integra PCA Richmond, NY</option>
+                  <option value="293">Integra PCA Suffolk, NY</option>
+                  <option value="312">
+                    Integra PCA- 2 Client Live In Bronx, NY
+                  </option>
+                  <option value="313">
+                    Integra PCA- 2 Client Live In Bronx, NY
+                  </option>
+                  <option value="316">
+                    Integra PCA- 2 Client Live In Richmond, NY
+                  </option>
+                  <option value="315">
+                    Integra PCA-2 Client Live IN Queens, NY
+                  </option>
+                  <option value="314">
+                    Integra PCA-2 Client Live In Kings, NY
+                  </option>
+                  <option value="317">
+                    Integra PCA-2 Client Live In Nassau, NY
+                  </option>
+                  <option value="318">
+                    Integra PCA-2 Client Live In Suffolk, NY
+                  </option>
+                  <option value="306">Integra PCA-Live in Bronx, NY</option>
+                  <option value="307">Integra PCA-Live in Kings, NY</option>
+                  <option value="310">Integra PCA-Live In Nassau, NY</option>
+                  <option value="308">Integra PCA-Live In Queens, NY</option>
+                  <option value="309">Integra PCA-Live In Richmond, NY</option>
+                  <option value="311">Integra PCA-Live In Suffolk, NY</option>
+                  <option value="159">INTEGRA RN New York, NY</option>
+                  <option value="264">Integra-Relay 45302 CDPAP All, NY</option>
+                  <option value="248">Integra-Relay 45302 CDPAP All, NY</option>
+                  <option value="249">Integra-Relay 45302 PCA All, NY</option>
+                  <option value="794">Medicaid 35.844 Kings, NY</option>
+                  <option value="788">Medicaid 46.14 Westchester, NY</option>
+                  <option value="58">Medicaid LPN Bronx, NY</option>
+                  <option value="62">Medicaid LPN Kings, NY</option>
+                  <option value="172">Medicaid LPN Peds Rockland, NY</option>
+                  <option value="213">
+                    Medicaid LPN - HI Tech Richmond, NY
+                  </option>
+                  <option value="166">
+                    Medicaid LPN -Hi-tech Rate Putnam, NY
+                  </option>
+                  <option value="43">Medicaid LPN Dutchess, NY</option>
+                  <option value="49">Medicaid LPN HI TECH Nassau, NY</option>
+                  <option value="50">Medicaid LPN HI TECH Nassau, NY</option>
+                  <option value="773">
+                    Medicaid LPN Hi Tech Rate Bronx, NY
+                  </option>
+                  <option value="72">
+                    Medicaid LPN Hi Tech Rate Suffolk, NY
+                  </option>
+                  <option value="86">
+                    Medicaid LPN Hi-Tech Peds Rate Orange, NY
+                  </option>
+                  <option value="82">
+                    Medicaid LPN Hi-Tech Rate Orange, NY
+                  </option>
+                  <option value="790">Medicaid LPN High Tech Queens, NY</option>
+                  <option value="803">
+                    Medicaid lpn high tech 30% and 45% Westchester, NY
+                  </option>
+                  <option value="795">Medicaid LPN High Tech Bronx, NY</option>
+                  <option value="801">
+                    Medicaid LPN High Tech Rate Queens, NY
+                  </option>
+                  <option value="689">
+                    Medicaid LPN HIGH TECH RATE +30 Bronx, NY
+                  </option>
+                  <option value="690">
+                    Medicaid LPN HIGH TECH RATE +30 Dutchess, NY
+                  </option>
+                  <option value="691">
+                    Medicaid LPN HIGH TECH RATE +30 Kings, NY
+                  </option>
+                  <option value="692">
+                    Medicaid LPN HIGH TECH RATE +30 Nassau, NY
+                  </option>
+                  <option value="693">
+                    Medicaid LPN HIGH TECH RATE +30 New York, NY
+                  </option>
+                  <option value="694">
+                    Medicaid LPN HIGH TECH RATE +30 Orange, NY
+                  </option>
+                  <option value="695">
+                    Medicaid LPN HIGH TECH RATE +30 Putnam, NY
+                  </option>
+                  <option value="696">
+                    Medicaid LPN HIGH TECH RATE +30 Queens, NY
+                  </option>
+                  <option value="697">
+                    Medicaid LPN HIGH TECH RATE +30 Richmond, NY
+                  </option>
+                  <option value="698">
+                    Medicaid LPN HIGH TECH RATE +30 Rockland, NY
+                  </option>
+                  <option value="699">
+                    Medicaid LPN HIGH TECH RATE +30 Suffolk, NY
+                  </option>
+                  <option value="700">
+                    Medicaid LPN HIGH TECH RATE +30 Sullivan, NY
+                  </option>
+                  <option value="701">
+                    Medicaid LPN HIGH TECH RATE +30 Ulster, NY
+                  </option>
+                  <option value="702">
+                    Medicaid LPN HIGH TECH RATE +30 Westchester, NY
+                  </option>
+                  <option value="745">
+                    Medicaid lpn high tech rate +45 Bronx, NY
+                  </option>
+                  <option value="746">
+                    Medicaid lpn high tech rate +45 Dutchess, NY
+                  </option>
+                  <option value="747">
+                    Medicaid lpn high tech rate +45 Kings, NY
+                  </option>
+                  <option value="748">
+                    Medicaid lpn high tech rate +45 Nassau, NY
+                  </option>
+                  <option value="749">
+                    Medicaid lpn high tech rate +45 New York, NY
+                  </option>
+                  <option value="750">
+                    Medicaid lpn high tech rate +45 Orange, NY
+                  </option>
+                  <option value="751">
+                    Medicaid lpn high tech rate +45 Putnam, NY
+                  </option>
+                  <option value="752">
+                    Medicaid lpn high tech rate +45 Queens, NY
+                  </option>
+                  <option value="753">
+                    Medicaid lpn high tech rate +45 Richmond, NY
+                  </option>
+                  <option value="754">
+                    Medicaid lpn high tech rate +45 Rockland, NY
+                  </option>
+                  <option value="755">
+                    Medicaid lpn high tech rate +45 Suffolk, NY
+                  </option>
+                  <option value="756">
+                    Medicaid lpn high tech rate +45 Sullivan, NY
+                  </option>
+                  <option value="757">
+                    Medicaid lpn high tech rate +45 Ulster, NY
+                  </option>
+                  <option value="758">
+                    Medicaid lpn high tech rate +45 Westchester, NY
+                  </option>
+                  <option value="632">
+                    Medicaid LPN HIGH TECH RATE 15% Bronx, NY
+                  </option>
+                  <option value="633">
+                    Medicaid LPN HIGH TECH RATE 15% Dutchess, NY
+                  </option>
+                  <option value="634">
+                    Medicaid LPN HIGH TECH RATE 15% Kings, NY
+                  </option>
+                  <option value="635">
+                    Medicaid LPN HIGH TECH RATE 15% Nassau, NY
+                  </option>
+                  <option value="636">
+                    Medicaid LPN HIGH TECH RATE 15% New York, NY
+                  </option>
+                  <option value="637">
+                    Medicaid LPN HIGH TECH RATE 15% Orange, NY
+                  </option>
+                  <option value="638">
+                    Medicaid LPN HIGH TECH RATE 15% Putnam, NY
+                  </option>
+                  <option value="639">
+                    Medicaid LPN HIGH TECH RATE 15% Queens, NY
+                  </option>
+                  <option value="640">
+                    Medicaid LPN HIGH TECH RATE 15% Richmond, NY
+                  </option>
+                  <option value="641">
+                    Medicaid LPN HIGH TECH RATE 15% Rockland, NY
+                  </option>
+                  <option value="642">
+                    Medicaid LPN HIGH TECH RATE 15% Suffolk, NY
+                  </option>
+                  <option value="643">
+                    Medicaid LPN HIGH TECH RATE 15% Sullivan, NY
+                  </option>
+                  <option value="644">
+                    Medicaid LPN HIGH TECH RATE 15% Ulster, NY
+                  </option>
+                  <option value="645">
+                    Medicaid LPN HIGH TECH RATE 15% Westchester, NY
+                  </option>
+                  <option value="516">
+                    Medicaid LPn HIGH TECH rate Bronx, NY
+                  </option>
+                  <option value="517">
+                    Medicaid LPn HIGH TECH rate Dutchess, NY
+                  </option>
+                  <option value="518">
+                    Medicaid LPn HIGH TECH rate Kings, NY
+                  </option>
+                  <option value="519">
+                    Medicaid LPn HIGH TECH rate Nassau, NY
+                  </option>
+                  <option value="520">
+                    Medicaid LPn HIGH TECH rate New York, NY
+                  </option>
+                  <option value="521">
+                    Medicaid LPn HIGH TECH rate Orange, NY
+                  </option>
+                  <option value="574">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Bronx, NY
+                  </option>
+                  <option value="575">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Dutchess, NY
+                  </option>
+                  <option value="576">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Kings, NY
+                  </option>
+                  <option value="577">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Nassau, NY
+                  </option>
+                  <option value="578">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% New York, NY
+                  </option>
+                  <option value="579">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Orange, NY
+                  </option>
+                  <option value="580">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Putnam, NY
+                  </option>
+                  <option value="581">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Queens, NY
+                  </option>
+                  <option value="582">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Richmond, NY
+                  </option>
+                  <option value="583">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Rockland, NY
+                  </option>
+                  <option value="584">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Suffolk, NY
+                  </option>
+                  <option value="585">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Sullivan, NY
+                  </option>
+                  <option value="586">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Ulster, NY
+                  </option>
+                  <option value="587">
+                    Medicaid LPN HIGH TECH RATE PEDS 30% Westchester, NY
+                  </option>
+                  <option value="522">
+                    Medicaid LPn HIGH TECH rate Putnam, NY
+                  </option>
+                  <option value="523">
+                    Medicaid LPn HIGH TECH rate Queens, NY
+                  </option>
+                  <option value="791">
+                    Medicaid LPN High Tech Rate Queens, NY
+                  </option>
+                  <option value="524">
+                    Medicaid LPn HIGH TECH rate Richmond, NY
+                  </option>
+                  <option value="525">
+                    Medicaid LPn HIGH TECH rate Rockland, NY
+                  </option>
+                  <option value="526">
+                    Medicaid LPn HIGH TECH rate Suffolk, NY
+                  </option>
+                  <option value="527">
+                    Medicaid LPn HIGH TECH rate Sullivan, NY
+                  </option>
+                  <option value="528">
+                    Medicaid LPn HIGH TECH rate Ulster, NY
+                  </option>
+                  <option value="529">
+                    Medicaid LPn HIGH TECH rate Westchester, NY
+                  </option>
+                  <option value="30">
+                    Medicaid LPN High Tech Westchester, NY
+                  </option>
+                  <option value="792">
+                    Medicaid LPN High Tech Westchester, NY
+                  </option>
+                  <option value="766">
+                    Medicaid LPN High Tech Westchester, NY
+                  </option>
+                  <option value="806">
+                    Medicaid LPN High Tech30% and 45% Bronx, NY
+                  </option>
+                  <option value="48">Medicaid LPN Nassau, NY</option>
+                  <option value="59">Medicaid LPN Peds Bronx, NY</option>
+                  <option value="45">Medicaid LPN Peds Dutchess, NY</option>
+                  <option value="54">
+                    Medicaid LPN Peds Hi Tech Nassau, NY
+                  </option>
+                  <option value="73">
+                    Medicaid LPN Peds Hi Tech Rate Suffolk, NY
+                  </option>
+                  <option value="173">
+                    Medicaid LPN Peds Hi-Tech Rockland, NY
+                  </option>
+                  <option value="31">
+                    Medicaid LPN Peds High Tech-001 Westchester, NY
+                  </option>
+                  <option value="271">Medicaid LPN PEDS Kings, NY</option>
+                  <option value="63">Medicaid LPN Peds Kings, NY</option>
+                  <option value="53">Medicaid LPN Peds Nassau, NY</option>
+                  <option value="39">Medicaid LPN Peds New York, NY</option>
+                  <option value="67">Medicaid LPN Peds Queens, NY</option>
+                  <option value="275">
+                    Medicaid LPN PEDS RATE New York, NY
+                  </option>
+                  <option value="274">Medicaid LPN PEDS RATE Queens, NY</option>
+                  <option value="323">Medicaid LPN Peds Rate Queens, NY</option>
+                  <option value="28">
+                    Medicaid LPN Peds Rate Westchester, NY
+                  </option>
+                  <option value="277">
+                    Medicaid LPN Peds Reg Rate Orange, NY
+                  </option>
+                  <option value="222">Medicaid LPN Peds Richmond, NY</option>
+                  <option value="71">Medicaid LPN Peds Suffolk, NY</option>
+                  <option value="130">Medicaid LPN Putnam, NY</option>
+                  <option value="66">Medicaid LPN Queens, NY</option>
+                  <option value="743">
+                    Medicaid lpn red rate +45 Ulster, NY
+                  </option>
+                  <option value="804">
+                    Medicaid lpn reg 30% and 45% Kings, NY
+                  </option>
+                  <option value="85">
+                    Medicaid LPN Reg Peds Rate Orange, NY
+                  </option>
+                  <option value="276">Medicaid LPN Reg Rate Orange, NY</option>
+                  <option value="674">
+                    Medicaid LPN REG RATE +30 Bronx, NY
+                  </option>
+                  <option value="675">
+                    Medicaid LPN REG RATE +30 Dutchess, NY
+                  </option>
+                  <option value="676">
+                    Medicaid LPN REG RATE +30 Kings, NY
+                  </option>
+                  <option value="677">
+                    Medicaid LPN REG RATE +30 Nassau, NY
+                  </option>
+                  <option value="678">
+                    Medicaid LPN REG RATE +30 New York, NY
+                  </option>
+                  <option value="679">
+                    Medicaid LPN REG RATE +30 Orange, NY
+                  </option>
+                  <option value="680">
+                    Medicaid LPN REG RATE +30 Putnam, NY
+                  </option>
+                  <option value="682">
+                    Medicaid LPN REG RATE +30 Queens, NY
+                  </option>
+                  <option value="683">
+                    Medicaid LPN REG RATE +30 Richmond, NY
+                  </option>
+                  <option value="684">
+                    Medicaid LPN REG RATE +30 Rockland, NY
+                  </option>
+                  <option value="685">
+                    Medicaid LPN REG RATE +30 Suffolk, NY
+                  </option>
+                  <option value="686">
+                    Medicaid LPN REG RATE +30 Sullivan, NY
+                  </option>
+                  <option value="687">
+                    Medicaid LPN REG RATE +30 Ulster, NY
+                  </option>
+                  <option value="688">
+                    Medicaid LPN REG RATE +30 Westchester, NY
+                  </option>
+                  <option value="731">
+                    Medicaid lpn reg rate +45 Bronx, NY
+                  </option>
+                  <option value="732">
+                    Medicaid lpn reg rate +45 Dutchess, NY
+                  </option>
+                  <option value="733">
+                    Medicaid lpn reg rate +45 Kings, NY
+                  </option>
+                  <option value="734">
+                    Medicaid lpn reg rate +45 Nassau, NY
+                  </option>
+                  <option value="735">
+                    Medicaid lpn reg rate +45 New York, NY
+                  </option>
+                  <option value="736">
+                    Medicaid lpn reg rate +45 Orange, NY
+                  </option>
+                  <option value="737">
+                    Medicaid lpn reg rate +45 Putnam, NY
+                  </option>
+                  <option value="738">
+                    Medicaid lpn reg rate +45 Queens, NY
+                  </option>
+                  <option value="739">
+                    Medicaid lpn reg rate +45 Richmond, NY
+                  </option>
+                  <option value="740">
+                    Medicaid lpn reg rate +45 Rockland, NY
+                  </option>
+                  <option value="741">
+                    Medicaid lpn reg rate +45 Suffolk, NY
+                  </option>
+                  <option value="742">
+                    Medicaid lpn reg rate +45 Sullivan, NY
+                  </option>
+                  <option value="744">
+                    Medicaid lpn reg rate +45 Westchester, NY
+                  </option>
+                  <option value="616">
+                    Medicaid LPN REG RATE 15% Bronx, NY
+                  </option>
+                  <option value="617">
+                    Medicaid LPN REG RATE 15% Dutchess, NY
+                  </option>
+                  <option value="618">
+                    Medicaid LPN REG RATE 15% Kings, NY
+                  </option>
+                  <option value="619">
+                    Medicaid LPN REG RATE 15% Nassau, NY
+                  </option>
+                  <option value="620">
+                    Medicaid LPN REG RATE 15% New York, NY
+                  </option>
+                  <option value="621">
+                    Medicaid LPN REG RATE 15% Orange, NY
+                  </option>
+                  <option value="622">
+                    Medicaid LPN REG RATE 15% Putnam, NY
+                  </option>
+                  <option value="623">
+                    Medicaid LPN REG RATE 15% Queens, NY
+                  </option>
+                  <option value="624">
+                    Medicaid LPN REG RATE 15% Richmond, NY
+                  </option>
+                  <option value="625">
+                    Medicaid LPN REG RATE 15% Rockland, NY
+                  </option>
+                  <option value="626">
+                    Medicaid LPN REG RATE 15% Suffolk, NY
+                  </option>
+                  <option value="628">
+                    Medicaid LPN REG RATE 15% Sullivan, NY
+                  </option>
+                  <option value="629">
+                    Medicaid LPN REG RATE 15% Ulster, NY
+                  </option>
+                  <option value="631">
+                    Medicaid LPN REG RATE 15% Westchester, NY
+                  </option>
+                  <option value="808">
+                    Medicaid lpn reg rate 30% and 45% Orange, NY
+                  </option>
+                  <option value="802">Medicaid LPN reg rate Bronx, NY</option>
+                  <option value="798">Medicaid LPN Reg Rate Bronx, NY</option>
+                  <option value="769">Medicaid LPN Reg Rate Bronx, NY</option>
+                  <option value="501">Medicaid LPn reg rate Bronx, NY</option>
+                  <option value="266">Medicaid LPN Reg Rate Bronx, NY</option>
+                  <option value="502">
+                    Medicaid LPn reg rate Dutchess, NY
+                  </option>
+                  <option value="503">Medicaid LPn reg rate Kings, NY</option>
+                  <option value="770">Medicaid LPN Reg Rate Kings, NY</option>
+                  <option value="269">Medicaid LPN Reg rate Kings, NY</option>
+                  <option value="504">Medicaid LPn reg rate Nassau, NY</option>
+                  <option value="505">
+                    Medicaid LPn reg rate New York, NY
+                  </option>
+                  <option value="273">
+                    Medicaid LPN REG RATE New York, NY
+                  </option>
+                  <option value="38">Medicaid LPN Reg Rate New York, NY</option>
+                  <option value="800">Medicaid LPN Reg Rate Orange, NY</option>
+                  <option value="81">Medicaid LPN Reg Rate Orange, NY</option>
+                  <option value="506">Medicaid LPn reg rate Orange, NY</option>
+                  <option value="771">Medicaid LPN Reg Rate Orange, NY</option>
+                  <option value="560">
+                    Medicaid LPN REG RATE PEDS 30% Bronx, NY
+                  </option>
+                  <option value="561">
+                    Medicaid LPN REG RATE PEDS 30% Dutchess, NY
+                  </option>
+                  <option value="562">
+                    Medicaid LPN REG RATE PEDS 30% Kings, NY
+                  </option>
+                  <option value="563">
+                    Medicaid LPN REG RATE PEDS 30% Nassau, NY
+                  </option>
+                  <option value="564">
+                    Medicaid LPN REG RATE PEDS 30% New York, NY
+                  </option>
+                  <option value="565">
+                    Medicaid LPN REG RATE PEDS 30% Orange, NY
+                  </option>
+                  <option value="566">
+                    Medicaid LPN REG RATE PEDS 30% Putnam, NY
+                  </option>
+                  <option value="567">
+                    Medicaid LPN REG RATE PEDS 30% Queens, NY
+                  </option>
+                  <option value="568">
+                    Medicaid LPN REG RATE PEDS 30% Richmond, NY
+                  </option>
+                  <option value="569">
+                    Medicaid LPN REG RATE PEDS 30% Rockland, NY
+                  </option>
+                  <option value="570">
+                    Medicaid LPN REG RATE PEDS 30% Suffolk, NY
+                  </option>
+                  <option value="571">
+                    Medicaid LPN REG RATE PEDS 30% Sullivan, NY
+                  </option>
+                  <option value="572">
+                    Medicaid LPN REG RATE PEDS 30% Ulster, NY
+                  </option>
+                  <option value="573">
+                    Medicaid LPN REG RATE PEDS 30% Westchester, NY
+                  </option>
+                  <option value="507">Medicaid LPn reg rate Putnam, NY</option>
+                  <option value="508">Medicaid LPn reg rate Queens, NY</option>
+                  <option value="272">Medicaid LPN REG RATE Queens, NY</option>
+                  <option value="509">
+                    Medicaid LPn reg rate Richmond, NY
+                  </option>
+                  <option value="510">
+                    Medicaid LPn reg rate Rockland, NY
+                  </option>
+                  <option value="512">Medicaid LPn reg rate Suffolk, NY</option>
+                  <option value="513">
+                    Medicaid LPn reg rate Sullivan, NY
+                  </option>
+                  <option value="514">Medicaid LPn reg rate Ulster, NY</option>
+                  <option value="515">
+                    Medicaid LPn reg rate Westchester, NY
+                  </option>
+                  <option value="27">
+                    Medicaid LPN Reg Rate Westchester, NY
+                  </option>
+                  <option value="793">
+                    Medicaid LPN Reg Rate Westchester, NY
+                  </option>
+                  <option value="805">
+                    Medicaid lpn Regular rate 30% and 45% Bronx, NY
+                  </option>
+                  <option value="198">Medicaid LPN Rockland, NY</option>
+                  <option value="70">Medicaid LPN Suffolk, NY</option>
+                  <option value="199">
+                    Medicaid LPN-Hi-Tech Rate Rockland, NY
+                  </option>
+                  <option value="212">
+                    Medicaid LPN-Ped Reg rate Richmond, NY
+                  </option>
+                  <option value="268">Medicaid LPN-Peds Bronx, NY</option>
+                  <option value="281">
+                    Medicaid LPN-Peds Hi-tech Westchester, NY
+                  </option>
+                  <option value="322">
+                    Medicaid LPN-Peds high tech Westchester, NY
+                  </option>
+                  <option value="77">
+                    Medicaid Peds Hi Tech Rate Suffolk, NY
+                  </option>
+                  <option value="75">Medicaid Peds Rate Suffolk, NY</option>
+                  <option value="40">Medicaid RN New York, NY</option>
+                  <option value="263">
+                    Medicaid RN @ LPN High Tech Rate Westchester, NY
+                  </option>
+                  <option value="780">
+                    Medicaid RN @ LPN Rate New York, NY
+                  </option>
+                  <option value="358">
+                    Medicaid RN @ LPN Rate Peds Rate Westchester, NY
+                  </option>
+                  <option value="114">
+                    Medicaid RN @ LPN w/ Peds Rate All, NY
+                  </option>
+                  <option value="112">
+                    Medicaid RN at LPN Peds Rate Queens, NY
+                  </option>
+                  <option value="79">
+                    Medicaid RN at LPN Rate New York, NY
+                  </option>
+                  <option value="60">Medicaid RN Bronx, NY</option>
+                  <option value="52">Medicaid RN HI TECH Nassau, NY</option>
+                  <option value="44">
+                    Medicaid RN Hi Tech Rate Dutchess, NY
+                  </option>
+                  <option value="76">
+                    Medicaid RN Hi Tech Rate Suffolk, NY
+                  </option>
+                  <option value="89">
+                    Medicaid RN Hi-Tech Peds Rate Orange, NY
+                  </option>
+                  <option value="84">
+                    Medicaid RN Hi-Tech Rate Orange, NY
+                  </option>
+                  <option value="265">
+                    Medicaid RN high tech Rate Westchester, NY
+                  </option>
+                  <option value="34">
+                    Medicaid RN High Tech Westchester, NY
+                  </option>
+                  <option value="807">
+                    Medicaid rn high tech 30% and 45% Bronx, NY
+                  </option>
+                  <option value="809">
+                    Medicaid RN high tech 30% and 45% Westchester, NY
+                  </option>
+                  <option value="774">Medicaid RN High Tech Bronx, NY</option>
+                  <option value="660">
+                    Medicaid RN HIGH TECH RATE +30 Bronx, NY
+                  </option>
+                  <option value="661">
+                    Medicaid RN HIGH TECH RATE +30 Dutchess, NY
+                  </option>
+                  <option value="662">
+                    Medicaid RN HIGH TECH RATE +30 Kings, NY
+                  </option>
+                  <option value="663">
+                    Medicaid RN HIGH TECH RATE +30 Nassau, NY
+                  </option>
+                  <option value="664">
+                    Medicaid RN HIGH TECH RATE +30 New York, NY
+                  </option>
+                  <option value="665">
+                    Medicaid RN HIGH TECH RATE +30 Orange, NY
+                  </option>
+                  <option value="666">
+                    Medicaid RN HIGH TECH RATE +30 Putnam, NY
+                  </option>
+                  <option value="667">
+                    Medicaid RN HIGH TECH RATE +30 Queens, NY
+                  </option>
+                  <option value="668">
+                    Medicaid RN HIGH TECH RATE +30 Richmond, NY
+                  </option>
+                  <option value="669">
+                    Medicaid RN HIGH TECH RATE +30 Rockland, NY
+                  </option>
+                  <option value="670">
+                    Medicaid RN HIGH TECH RATE +30 Suffolk, NY
+                  </option>
+                  <option value="671">
+                    Medicaid RN HIGH TECH RATE +30 Sullivan, NY
+                  </option>
+                  <option value="672">
+                    Medicaid RN HIGH TECH RATE +30 Ulster, NY
+                  </option>
+                  <option value="717">
+                    Medicaid RN high tech RATE +45 Bronx, NY
+                  </option>
+                  <option value="718">
+                    Medicaid RN high tech RATE +45 Dutchess, NY
+                  </option>
+                  <option value="719">
+                    Medicaid RN high tech RATE +45 Kings, NY
+                  </option>
+                  <option value="720">
+                    Medicaid RN high tech RATE +45 Nassau, NY
+                  </option>
+                  <option value="721">
+                    Medicaid RN high tech RATE +45 New York, NY
+                  </option>
+                  <option value="722">
+                    Medicaid RN high tech RATE +45 Orange, NY
+                  </option>
+                  <option value="723">
+                    Medicaid RN high tech RATE +45 Putnam, NY
+                  </option>
+                  <option value="724">
+                    Medicaid RN high tech RATE +45 Queens, NY
+                  </option>
+                  <option value="725">
+                    Medicaid RN high tech RATE +45 Richmond, NY
+                  </option>
+                  <option value="726">
+                    Medicaid RN high tech RATE +45 Rockland, NY
+                  </option>
+                  <option value="727">
+                    Medicaid RN high tech RATE +45 Suffolk, NY
+                  </option>
+                  <option value="728">
+                    Medicaid RN high tech RATE +45 Sullivan, NY
+                  </option>
+                  <option value="729">
+                    Medicaid RN high tech RATE +45 Ulster, NY
+                  </option>
+                  <option value="730">
+                    Medicaid RN high tech RATE +45 Westchester, NY
+                  </option>
+                  <option value="602">
+                    Medicaid RN HIGH TECH RATE 15% Bronx, NY
+                  </option>
+                  <option value="603">
+                    Medicaid RN HIGH TECH RATE 15% Dutchess, NY
+                  </option>
+                  <option value="604">
+                    Medicaid RN HIGH TECH RATE 15% Kings, NY
+                  </option>
+                  <option value="605">
+                    Medicaid RN HIGH TECH RATE 15% Nassau, NY
+                  </option>
+                  <option value="606">
+                    Medicaid RN HIGH TECH RATE 15% New York, NY
+                  </option>
+                  <option value="607">
+                    Medicaid RN HIGH TECH RATE 15% Orange, NY
+                  </option>
+                  <option value="608">
+                    Medicaid RN HIGH TECH RATE 15% Putnam, NY
+                  </option>
+                  <option value="609">
+                    Medicaid RN HIGH TECH RATE 15% Queens, NY
+                  </option>
+                  <option value="610">
+                    Medicaid RN HIGH TECH RATE 15% Richmond, NY
+                  </option>
+                  <option value="611">
+                    Medicaid RN HIGH TECH RATE 15% Rockland, NY
+                  </option>
+                  <option value="612">
+                    Medicaid RN HIGH TECH RATE 15% Suffolk, NY
+                  </option>
+                  <option value="613">
+                    Medicaid RN HIGH TECH RATE 15% Sullivan, NY
+                  </option>
+                  <option value="614">
+                    Medicaid RN HIGH TECH RATE 15% Ulster, NY
+                  </option>
+                  <option value="615">
+                    Medicaid RN HIGH TECH RATE 15% Westchester, NY
+                  </option>
+                  <option value="485">
+                    Medicaid rn high tech rate Bronx, NY
+                  </option>
+                  <option value="799">
+                    Medicaid RN High Tech Rate Bronx, NY
+                  </option>
+                  <option value="486">
+                    Medicaid rn high tech rate Dutchess, NY
+                  </option>
+                  <option value="487">
+                    Medicaid rn high tech rate Kings, NY
+                  </option>
+                  <option value="488">
+                    Medicaid rn high tech rate Nassau, NY
+                  </option>
+                  <option value="489">
+                    Medicaid rn high tech rate New York, NY
+                  </option>
+                  <option value="490">
+                    Medicaid rn high tech rate Orange, NY
+                  </option>
+                  <option value="544">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Bronx, NY
+                  </option>
+                  <option value="547">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Dutchess, NY
+                  </option>
+                  <option value="548">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Kings, NY
+                  </option>
+                  <option value="549">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Nassau, NY
+                  </option>
+                  <option value="550">
+                    Medicaid RN HIGH TECH RATE PEDS 30% New York, NY
+                  </option>
+                  <option value="551">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Orange, NY
+                  </option>
+                  <option value="552">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Putnam, NY
+                  </option>
+                  <option value="553">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Queens, NY
+                  </option>
+                  <option value="554">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Richmond, NY
+                  </option>
+                  <option value="555">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Rockland, NY
+                  </option>
+                  <option value="556">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Suffolk, NY
+                  </option>
+                  <option value="557">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Sullivan, NY
+                  </option>
+                  <option value="558">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Ulster, NY
+                  </option>
+                  <option value="559">
+                    Medicaid RN HIGH TECH RATE PEDS 30% Westchester, NY
+                  </option>
+                  <option value="491">
+                    Medicaid rn high tech rate Putnam, NY
+                  </option>
+                  <option value="492">
+                    Medicaid rn high tech rate Queens, NY
+                  </option>
+                  <option value="493">
+                    Medicaid rn high tech rate Richmond, NY
+                  </option>
+                  <option value="494">
+                    Medicaid rn high tech rate Rockland, NY
+                  </option>
+                  <option value="495">
+                    Medicaid rn high tech rate Suffolk, NY
+                  </option>
+                  <option value="496">
+                    Medicaid rn high tech rate Sullivan, NY
+                  </option>
+                  <option value="497">
+                    Medicaid rn high tech rate Ulster, NY
+                  </option>
+                  <option value="498">
+                    Medicaid rn high tech rate Westchester, NY
+                  </option>
+                  <option value="787">
+                    Medicaid RN High Tech Rate Westchester, NY
+                  </option>
+                  <option value="767">
+                    Medicaid RN High Tech Rate Westchester, NY
+                  </option>
+                  <option value="797">
+                    Medicaid RN High Tech Westchester, NY
+                  </option>
+                  <option value="772">
+                    Medicaid RN Hih Tech Rate Bronx, NY
+                  </option>
+                  <option value="64">Medicaid RN Kings, NY</option>
+                  <option value="51">Medicaid RN Nassau, NY</option>
+                  <option value="673">
+                    Medicaid RN Pediatric HIGH TECH RATE Westchester, NY
+                  </option>
+                  <option value="61">Medicaid RN Peds Bronx, NY</option>
+                  <option value="46">Medicaid RN Peds Dutchess, NY</option>
+                  <option value="56">
+                    Medicaid RN Peds Hi Tech Nassau, NY
+                  </option>
+                  <option value="282">
+                    Medicaid RN Peds Hi Tech Rate Westchester, NY
+                  </option>
+                  <option value="270">
+                    Medicaid RN Peds Hi Tech Westchester, NY
+                  </option>
+                  <option value="175">
+                    Medicaid RN Peds Hi-Tech Rockland, NY
+                  </option>
+                  <option value="36">
+                    Medicaid RN Peds High Tech Westchester, NY
+                  </option>
+                  <option value="65">Medicaid RN Peds Kings, NY</option>
+                  <option value="55">Medicaid RN Peds Nassau, NY</option>
+                  <option value="41">Medicaid RN Peds New York, NY</option>
+                  <option value="69">Medicaid RN Peds Queens, NY</option>
+                  <option value="469">
+                    Medicaid RN PEDS rate 30% Bronx, NY
+                  </option>
+                  <option value="87">Medicaid RN Peds Rate Orange, NY</option>
+                  <option value="174">Medicaid RN Peds Rockland, NY</option>
+                  <option value="33">Medicaid RN Peds Westchester, NY</option>
+                  <option value="68">Medicaid RN Queens, NY</option>
+                  <option value="167">Medicaid RN Rate Putnam, NY</option>
+                  <option value="279">
+                    Medicaid RN Reg Peds Rate Bronx, NY
+                  </option>
+                  <option value="646">
+                    Medicaid RN REG RATE +30 Bronx, NY
+                  </option>
+                  <option value="647">
+                    Medicaid RN REG RATE +30 Dutchess, NY
+                  </option>
+                  <option value="648">
+                    Medicaid RN REG RATE +30 Kings, NY
+                  </option>
+                  <option value="649">
+                    Medicaid RN REG RATE +30 Nassau, NY
+                  </option>
+                  <option value="650">
+                    Medicaid RN REG RATE +30 New York, NY
+                  </option>
+                  <option value="651">
+                    Medicaid RN REG RATE +30 Orange, NY
+                  </option>
+                  <option value="652">
+                    Medicaid RN REG RATE +30 Putnam, NY
+                  </option>
+                  <option value="653">
+                    Medicaid RN REG RATE +30 Queens, NY
+                  </option>
+                  <option value="654">
+                    Medicaid RN REG RATE +30 Richmond, NY
+                  </option>
+                  <option value="655">
+                    Medicaid RN REG RATE +30 Rockland, NY
+                  </option>
+                  <option value="656">
+                    Medicaid RN REG RATE +30 Suffolk, NY
+                  </option>
+                  <option value="657">
+                    Medicaid RN REG RATE +30 Sullivan, NY
+                  </option>
+                  <option value="658">
+                    Medicaid RN REG RATE +30 Ulster, NY
+                  </option>
+                  <option value="659">
+                    Medicaid RN REG RATE +30 Westchester, NY
+                  </option>
+                  <option value="703">
+                    Medicaid RN REG RATE +45 Bronx, NY
+                  </option>
+                  <option value="704">
+                    Medicaid RN REG RATE +45 Dutchess, NY
+                  </option>
+                  <option value="705">
+                    Medicaid RN REG RATE +45 Kings, NY
+                  </option>
+                  <option value="706">
+                    Medicaid RN REG RATE +45 Nassau, NY
+                  </option>
+                  <option value="707">
+                    Medicaid RN REG RATE +45 New York, NY
+                  </option>
+                  <option value="708">
+                    Medicaid RN REG RATE +45 Orange, NY
+                  </option>
+                  <option value="709">
+                    Medicaid RN REG RATE +45 Putnam, NY
+                  </option>
+                  <option value="710">
+                    Medicaid RN REG RATE +45 Queens, NY
+                  </option>
+                  <option value="711">
+                    Medicaid RN REG RATE +45 Richmond, NY
+                  </option>
+                  <option value="712">
+                    Medicaid RN REG RATE +45 Rockland, NY
+                  </option>
+                  <option value="713">
+                    Medicaid RN REG RATE +45 Suffolk, NY
+                  </option>
+                  <option value="714">
+                    Medicaid RN REG RATE +45 Sullivan, NY
+                  </option>
+                  <option value="715">
+                    Medicaid RN REG RATE +45 Ulster, NY
+                  </option>
+                  <option value="716">
+                    Medicaid RN REG RATE +45 Westchester, NY
+                  </option>
+                  <option value="796">Medicaid RN Reg Rate Bronx, NY</option>
+                  <option value="468">Medicaid RN reg rate Bronx, NY</option>
+                  <option value="278">Medicaid RN Reg Rate Bronx, NY</option>
+                  <option value="470">Medicaid rn reg rate Dutchess, NY</option>
+                  <option value="471">Medicaid rn reg rate Kings, NY</option>
+                  <option value="472">Medicaid rn reg rate Nassau, NY</option>
+                  <option value="473">Medicaid rn reg rate New York, NY</option>
+                  <option value="83">Medicaid RN Reg Rate Orange, NY</option>
+                  <option value="475">Medicaid rn reg rate Orange, NY</option>
+                  <option value="280">
+                    Medicaid RN Reg rate Peds New York, NY
+                  </option>
+                  <option value="588">
+                    Medicaid RN REG RATE PEDS 15% Bronx, NY
+                  </option>
+                  <option value="589">
+                    Medicaid RN REG RATE PEDS 15% Dutchess, NY
+                  </option>
+                  <option value="590">
+                    Medicaid RN REG RATE PEDS 15% Kings, NY
+                  </option>
+                  <option value="591">
+                    Medicaid RN REG RATE PEDS 15% Nassau, NY
+                  </option>
+                  <option value="592">
+                    Medicaid RN REG RATE PEDS 15% New York, NY
+                  </option>
+                  <option value="593">
+                    Medicaid RN REG RATE PEDS 15% Orange, NY
+                  </option>
+                  <option value="594">
+                    Medicaid RN REG RATE PEDS 15% Putnam, NY
+                  </option>
+                  <option value="595">
+                    Medicaid RN REG RATE PEDS 15% Queens, NY
+                  </option>
+                  <option value="596">
+                    Medicaid RN REG RATE PEDS 15% Richmond, NY
+                  </option>
+                  <option value="597">
+                    Medicaid RN REG RATE PEDS 15% Rockland, NY
+                  </option>
+                  <option value="598">
+                    Medicaid RN REG RATE PEDS 15% Suffolk, NY
+                  </option>
+                  <option value="599">
+                    Medicaid RN REG RATE PEDS 15% Sullivan, NY
+                  </option>
+                  <option value="600">
+                    Medicaid RN REG RATE PEDS 15% Ulster, NY
+                  </option>
+                  <option value="601">
+                    Medicaid RN REG RATE PEDS 15% Westchester, NY
+                  </option>
+                  <option value="530">
+                    Medicaid RN REG RATE PEDS 30% Dutchess, NY
+                  </option>
+                  <option value="532">
+                    Medicaid RN REG RATE PEDS 30% Kings, NY
+                  </option>
+                  <option value="533">
+                    Medicaid RN REG RATE PEDS 30% Nassau, NY
+                  </option>
+                  <option value="534">
+                    Medicaid RN REG RATE PEDS 30% New York, NY
+                  </option>
+                  <option value="535">
+                    Medicaid RN REG RATE PEDS 30% Orange, NY
+                  </option>
+                  <option value="536">
+                    Medicaid RN REG RATE PEDS 30% Putnam, NY
+                  </option>
+                  <option value="537">
+                    Medicaid RN REG RATE PEDS 30% Queens, NY
+                  </option>
+                  <option value="538">
+                    Medicaid RN REG RATE PEDS 30% Richmond, NY
+                  </option>
+                  <option value="539">
+                    Medicaid RN REG RATE PEDS 30% Rockland, NY
+                  </option>
+                  <option value="540">
+                    Medicaid RN REG RATE PEDS 30% Suffolk, NY
+                  </option>
+                  <option value="541">
+                    Medicaid RN REG RATE PEDS 30% Sullivan, NY
+                  </option>
+                  <option value="542">
+                    Medicaid RN REG RATE PEDS 30% Ulster, NY
+                  </option>
+                  <option value="543">
+                    Medicaid RN REG RATE PEDS 30% Westchester, NY
+                  </option>
+                  <option value="476">Medicaid rn reg rate Putnam, NY</option>
+                  <option value="477">Medicaid rn reg rate Queens, NY</option>
+                  <option value="478">Medicaid rn reg rate Richmond, NY</option>
+                  <option value="243">Medicaid RN Reg Rate Richmond, NY</option>
+                  <option value="479">Medicaid rn reg rate Rockland, NY</option>
+                  <option value="481">Medicaid rn reg rate Suffolk, NY</option>
+                  <option value="74">Medicaid RN Reg Rate Suffolk, NY</option>
+                  <option value="482">Medicaid rn reg rate Sullivan, NY</option>
+                  <option value="483">Medicaid rn reg rate Ulster, NY</option>
+                  <option value="484">
+                    Medicaid rn reg rate Westchester, NY
+                  </option>
+                  <option value="32">
+                    Medicaid RN Reg Rate Westchester, NY
+                  </option>
+                  <option value="768">
+                    Medicaid RN Reg Rate Westchester, NY
+                  </option>
+                  <option value="168">Medicaid RN- Reg Rate Putnam, NY</option>
+                  <option value="240">
+                    Medical Indemnity Fund LPN All, NY
+                  </option>
+                  <option value="262">
+                    Medical Indemnity Fund LPN All, NY
+                  </option>
+                  <option value="224">
+                    Medical Indemnity Fund LPN All, NY
+                  </option>
+                  <option value="261">MetroPlus Health Plan LPN All, NY</option>
+                  <option value="234">
+                    Molly Zucker Private Pay PCA-Private All, NY
+                  </option>
+                  <option value="233">
+                    Montefiore Diamond Care LPN All, NY
+                  </option>
+                  <option value="284">
+                    MTHCS-Compliance CDPAP - COMPLIANCE All, NY
+                  </option>
+                  <option value="283">
+                    MTHCS-Compliance HHA - Compliance All, NY
+                  </option>
+                  <option value="320">MTHCS-Compliance PCA All, NY</option>
+                  <option value="778">MVP Heath Care LPN All, NY</option>
+                  <option value="784">MVP Heath Care LPN Rate All, NY</option>
+                  <option value="785">
+                    MVP Heath Care LPN SCA A Ruiz Westchester, NY
+                  </option>
+                  <option value="779">MVP Heath Care RN All, NY</option>
+                  <option value="776">MVP Heath Care RN Rate All, NY</option>
+                  <option value="786">
+                    MVP Heath Care RN SCA A RUIZ Westchester, NY
+                  </option>
+                  <option value="285">
+                    MVP Heath Care SCA A Wahab All, NY
+                  </option>
+                  <option value="138">
+                    Private-Youdelman Private HHA Services Westchester, NY
+                  </option>
+                  <option value="94">
+                    Senior Health Partners LPN-Adult Albany, NY
+                  </option>
+                  <option value="102">
+                    Senior Health Partners PCA Albany, NY
+                  </option>
+                  <option value="467">Senior Whole Health CDPAP All, NY</option>
+                  <option value="229">
+                    Senior Whole Health of New York, INc. PCA - Live IN All, NY
+                  </option>
+                  <option value="228">
+                    Senior Whole Health of New York, INc. PCS Level 2 Basic 2
+                    Client All, NY
+                  </option>
+                  <option value="230">
+                    Senior Whole Health of New York, INc. PCS Live in two Client
+                    All, NY
+                  </option>
+                  <option value="227">
+                    Senior Whole Health of New York, INc. PCS- Personal Care
+                    Service Levell I All, NY
+                  </option>
+                  <option value="466">Senior Whole Health PCA All, NY</option>
+                  <option value="319">Senior Whole Health PCA- All, NY</option>
+                  <option value="202">
+                    Senior-Health Partners Companion All, NY
+                  </option>
+                  <option value="139">
+                    Senior-Health Partners HHA Westchester, NY
+                  </option>
+                  <option value="115">
+                    Senior-Health Partners LPN Bronx, NY
+                  </option>
+                  <option value="118">
+                    Senior-Health Partners LPN Kings, NY
+                  </option>
+                  <option value="117">
+                    Senior-Health Partners LPN Westchester, NY
+                  </option>
+                  <option value="162">
+                    Senior-Health Partners PCA All, NY
+                  </option>
+                  <option value="205">
+                    Senior-Health Partners PCA Live-In All, NY
+                  </option>
+                  <option value="116">
+                    Senior-Health Partners RN Bronx, NY
+                  </option>
+                  <option value="120">
+                    Senior-Health Partners RN Westchester, NY
+                  </option>
+                  <option value="108">
+                    Senior-Health Partners RN-SR Bronx, NY
+                  </option>
+                  <option value="109">
+                    Senior-Health Partners RN-SR Bronx, NY
+                  </option>
+                  <option value="110">
+                    Senior-Health Partners RN-SR Bronx, NY
+                  </option>
+                  <option value="201">
+                    SR. Health Partners Companion Care All, NY
+                  </option>
+                  <option value="113">SR. Health Partners LPN Bronx, NY</option>
+                  <option value="99">
+                    SR. Health Partners LPN Westchester, NY
+                  </option>
+                  <option value="107">
+                    SR. Health Partners LPN-SR Bronx, NY
+                  </option>
+                  <option value="100">
+                    SR. Health Partners RN Westchester, NY
+                  </option>
+                  <option value="111">
+                    SR. Health Partners RN-SR Bronx, NY
+                  </option>
+                  <option value="171">
+                    TFC Providers Network Compliance All, NY
+                  </option>
+                  <option value="181">
+                    TFC Providers Network Compliance LPN All, NY
+                  </option>
+                  <option value="180">
+                    TFC Providers Network Compliance RN All, NY
+                  </option>
+                  <option value="148">
+                    TFC Service Bureau, Inc. Compliance - LPN - Geriatric All,
+                    NY
+                  </option>
+                  <option value="150">
+                    TFC Service Bureau, Inc. Compliance - LPN - Peds All, NY
+                  </option>
+                  <option value="149">
+                    TFC Service Bureau, Inc. Compliance - RN - Geriatric All, NY
+                  </option>
+                  <option value="151">
+                    TFC Service Bureau, Inc. Compliance - RN - Peds All, NY
+                  </option>
+                  <option value="146">
+                    TFC Service Bureau, Inc. Compliance- LPN All, NY
+                  </option>
+                  <option value="147">
+                    TFC Service Bureau, Inc. Compliance-RN All, NY
+                  </option>
+                  <option value="250">UHCNY Compliance Docs All, NY</option>
+                  <option value="357">
+                    UHCNY-Compliance CDPAP Compliance All, NY
+                  </option>
+                  <option value="356">
+                    UHCNY-Compliance PCA Compliance All, NY
+                  </option>
+                  <option value="763">UMR LPN Reg Rate All, NY</option>
+                  <option value="245">United health Care LPN All, NY</option>
+                  <option value="372">
+                    United health Care LPN RATE All, NY
+                  </option>
+                  <option value="223">
+                    United health Care LPN-Peds All, NY
+                  </option>
+                  <option value="373">
+                    United health Care RN Reg Rate All, NY
+                  </option>
+                  <option value="259">
+                    VGM HOMELINK HHA /CNA Visit upto 2 Hrs All, NY
+                  </option>
+                  <option value="260">
+                    VGM HOMELINK HHA Per Hour Rate All, NY
+                  </option>
+                  <option value="252">
+                    VGM HOMELINK HI Tech RN Visit upto 2 Hrs All, NY
+                  </option>
+                  <option value="253">
+                    VGM HOMELINK Hi Tech Skill Nurse All, NY
+                  </option>
+                  <option value="258">
+                    VGM HOMELINK LPN Skill Nursing Per hrs All, NY
+                  </option>
+                  <option value="257">
+                    VGM HOMELINK LPN Visit upto 2hrs All, NY
+                  </option>
+                  <option value="254">
+                    VGM HOMELINK RN Eval upto 2 Hrs All, NY
+                  </option>
+                  <option value="256">
+                    VGM HOMELINK RN Skill Nursing Per Hr All, NY
+                  </option>
+                  <option value="255">
+                    VGM HOMELINK RN Visit upto 2 Hrs All, NY
+                  </option>
+                  <option value="176">Village Care Max PCA All, NY</option>
+                  <option value="177">
+                    Village Care Max RN Assesment Visit All, NY
+                  </option>
+                  <option value="235">VNS Choice SelectCare LPN All, NY</option>
+                  <option value="236">
+                    VNS Choice SelectCare LPN-15 Minutes All, NY
+                  </option>
+                  <option value="238">
+                    VNS Choice SelectCare PCS Level II Basic -2 Client All, NY
+                  </option>
+                  <option value="237">
+                    VNS Choice SelectCare PCS Level II Basic 15 Min All, NY
+                  </option>
+                  <option value="170">WellCare PCA All, NY</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Account Status: </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="0">All Statuses</option>
+                  <option value="1">Active</option>
+                  <option value="2">Close</option>
+                  <option value="3">Awaiting Work / Coverage</option>
+                  <option value="4">Discharge / Transfer</option>
+                  <option value="5">Transfer</option>
+                  <option value="6">Freeze</option>
+                  <option value="7">Pending Compliance</option>
+                  <option value="8">Testing</option>
+                  <option value="9">New Lead</option>
+                  <option value="10">Registration</option>
+                  <option value="11">Pending Approval</option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Provider #</label>
+                <input class="form-control" type="text" name="provider#" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Provider Name:</label>
+                <input class="form-control" type="text" name="provider" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Client #:</label>
+                <input class="form-control" type="text" name="client#" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Client Name:</label>
+                <input class="form-control" type="text" name="clientn" />
+              </div>
+            </div>
+            <div class="btn-group justify-content-start mt-4 mb-4">
+              <button type="submit" class="primary_btn me-3">Run Report</button>
+              <button type="reset" class="primary_btn me-3">Clear</button>
+            </div>
+          </form>
+          <hr class="mt-2" />
+        </div>
+      </section>
+      <footer-component></footer-component>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

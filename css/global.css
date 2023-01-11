@@ -215,6 +215,33 @@ input[type="radio"] {
   border: 1px solid var(--p_blue) !important;
 }
 /** radio button **/
+/** input file **/
+input[type="file"] {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  height: 50px;
+}
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+  margin-right: 25px;
+  margin-top: 0;
+}
+input[type="file"]::after {
+  content: "Choose File";
+  position: absolute;
+  background: rgba(217, 217, 217, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 0.813rem 0.938rem;
+  font-family: var(--Montserrat);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  left: 0;
+  top: 0;
+}
+/** input file **/
 /** form heading **/
 .defualt_heading {
   font-size: 1.125rem;
