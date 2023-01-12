@@ -315,7 +315,7 @@ Header #nav_menu li {
 Header #nav_menu .nav_links:hover {
   background: #345d99;
 }
-Header #nav_menu li.active .nav_links {
+Header #nav_menu li .nav_links.active {
   background: #345d99;
 }
 Header .header_bottom {
@@ -354,7 +354,7 @@ Header #nav_menu li .Inner_menu a:hover {
 Header #nav_menu li .Inner_menu a:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
-.Inner_menu .active a {
+.Inner_menu a.active {
   background: #e6ebf5;
 }
 Header #nav_menu li:hover .Inner_menu {

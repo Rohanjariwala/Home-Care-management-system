@@ -2,7 +2,7 @@ class footer extends HTMLElement {
   constructor() {
     super();
   }
-    connectedCallback() {
+  connectedCallback() {
     this.innerHTML = `
       <footer>
             <div class="Print text-end">
@@ -13,7 +13,7 @@ class footer extends HTMLElement {
                 <div class="text2">DotNetNuke® is copyright 2002-2022 by DotNetNuke Corporation</div>
             </div>
       </footer>
-    `;
+     `;
   }
 }
 
