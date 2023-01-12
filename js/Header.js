@@ -61,6 +61,8 @@ class Header extends HTMLElement {
                   <li><a href="../marketing-report.html">Marketing Report</a></li>
                   <li><a href="../login-report.html">Login Report</a></li>
                   <li><a href="../financial-report.html">Financial Report</a></li>
+                  <li><a href="../debts-report.html">Debts Report</a></li>
+                  <li><a href="../employee-summary-report.html">Employee Summary Report</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav_links has_arrow">Setup</a></li>

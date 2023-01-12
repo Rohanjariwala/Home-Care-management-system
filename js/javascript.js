@@ -1,18 +1,12 @@
-$(function () {
-  $("#nav_menu ul li a")
-    .filter(function () {
-      return this.href == location.href;
-    })
-    .parent()
-    .addClass("active")
-    .siblings()
-    .removeClass("active");
-  $("#nav_menu ul li a").click(function () {
-    $(this).parent().addClass("active").siblings().removeClass("active");
-  });
+document.querySelectorAll("#nav_menu a").forEach((link) => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+    link.setAttribute("aria-current", "page");
+  }
 });
-
-$(".advance_btn").click(function () {
-  $(".hidden_div").toggleClass("show");
-  $(this).toggleClass("active");
-});
+function classToggle() {
+  var menu = document.querySelector(".hidden_div");
+  this.classList.toggle("active");
+  menu.classList.toggle("show");
+}
+document.querySelector(".advance_btn").addEventListener("click", classToggle);
