@@ -19,7 +19,7 @@ class Header extends HTMLElement {
         </div>
         <nav id="nav_menu">
           <ul class="d-flex flex-wrap justify-content-center">
-            <li><a href=".." class="nav_links has_arrow ">Home</a></li>
+            <li><a href="../" class="nav_links has_arrow ">Home</a></li>
             <li><a href="../clients.html" class="nav_links">Clients</a></li>
             <li><a href="../providers.html" class="nav_links">Providers</a></li>
             <li>
