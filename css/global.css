@@ -334,7 +334,7 @@ Header #nav_menu li .Inner_menu {
   left: 6px;
   background: #fff;
   box-shadow: 0 0 7px #22222238;
-  min-width: 12.5rem;
+  min-width: 15.5rem;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -346,7 +346,7 @@ Header #nav_menu li .Inner_menu a {
   font-family: var(--Montserrat);
   font-weight: 500;
   font-size: 0.938rem;
-  transition: all 0;
+  transition: all 0.4s;
 }
 Header #nav_menu li .Inner_menu a:hover {
   background: #e6ebf5;
