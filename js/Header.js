@@ -68,7 +68,16 @@ class Header extends HTMLElement {
                   <li><a href="../reports/aging-report.html">Aging Report</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="nav_links has_arrow">Setup</a></li>
+            <li><a href="#" class="nav_links has_arrow">Setup</a>
+                <ul class="Inner_menu">
+                   <li><a href="../setup/account-status.html">Account Status</a></li>
+                   <li><a href="../setup/account-type.html">Account Type</a></li>
+                   <li><a href="../setup/language.html">Language</a></li>
+                   <li><a href="../setup/patient-type.html">Patient Type</a></li>
+                   <li><a href="../setup/payment-method.html">Payment Method</a></li>
+                   <li><a href="../setup/profession.html">Profession</a></li>
+                </ul>
+            </li>
             <li><a href="#" class="nav_links has_arrow">Security</a></li>
             <li><a href="#" class="nav_links has_arrow">Audit</a></li>
             <li><a href="#" class="nav_links has_arrow">Feedback</a></li>
