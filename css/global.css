@@ -428,6 +428,56 @@ input[type="file"]::after {
   background: rgba(8, 52, 115, 0.1);
 }
 /** form box lauout **/
+/** table pagination layout **/
+div#buttons {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+}
+input.arrow_btn {
+  color: transparent;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(8, 52, 115, 0.06) !important;
+  border: 1px solid var(--p_blue) !important;
+  box-shadow: none !important;
+  position: relative;
+  background: url(../images/blue_arrow.png);
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center center;
+  border-radius: 0;
+}
+input.arrow_btn.prev {
+  float: left;
+  transform: rotate(90deg);
+  border-bottom-right-radius: 8px;
+}
+input.arrow_btn.next {
+  float: right;
+  transform: rotate(-90deg);
+  border-bottom-left-radius: 8px;
+}
+div#buttons :is(#id1, #id2) {
+  width: 1.813rem;
+  height: 1.813rem;
+  background: var(--white);
+  border: 1px solid var(--p_blue);
+  border-radius: 0;
+  margin: 0 5px;
+  box-shadow: none !important;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: var(--Montserrat);
+  font-weight: 600;
+  padding: 0;
+}
+div#buttons input.active {
+  background: rgba(8, 52, 115, 0.3) !important;
+}
+/** table pagination layout **/
 /** footer css **/
 footer-component footer {
   padding: 1.25rem;
