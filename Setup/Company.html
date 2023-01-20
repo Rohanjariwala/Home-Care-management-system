@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/Header.js" type="text/javascript"></script>
+    <script src="../js/footer.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main id="main">
+      <header-component></header-component>
+      <section id="company">
+        <div class="banner text-center">
+          <div class="sub_head">Setup</div>
+          <h1 class="main_head">Company</h1>
+        </div>
+        <div class="container">
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-3 mb-3">
+                <label class="form-label">CompanyID</label>
+                <input class="form-control" type="text" name="companyid" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Company</label>
+                <input class="form-control" type="text" name="company" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">TaxID</label>
+                <input class="form-control" type="text" name="taxid" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Address</label>
+                <input class="form-control" type="text" name="address" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">City</label>
+                <input class="form-control" type="text" name="city" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">State</label>
+                <input class="form-control" type="text" name="state" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Zip</label>
+                <input class="form-control" type="text" name="zip" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Zip4</label>
+                <input class="form-control" type="text" name="zip4" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Phone</label>
+                <input class="form-control" type="text" name="phone" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Fax</label>
+                <input class="form-control" type="text" name="fax" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Email</label>
+                <input class="form-control" type="email" name="email" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">MailServer</label>
+                <input class="form-control" type="text" name="mailserver" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">UserName</label>
+                <input class="form-control" type="text" name="usename" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">PWD</label>
+                <input class="form-control" type="text" name="pwd" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">FeesLimit</label>
+                <input class="form-control" type="text" name="feeslimit" />
+              </div>
+              <div class="col-md-3 mb-3" style="padding-top: 39px">
+                <label class="form-label" for="timesheet"
+                  >Send Timesheet Reminder</label
+                >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="timesheet"
+                  checked
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label class="form-label">SMSText</label>
+                <input class="form-control" type="text" name="smstext" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">QBFile</label>
+                <input class="form-control" type="text" name="qbfile" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">UniqueID</label>
+                <input class="form-control" type="text" name="uniqueid" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">WebSite</label>
+                <input class="form-control" type="text" name="website" />
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Logo</label>
+                <input class="form-control" type="file" id="formFile" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Timesheet</label>
+                <input class="form-control" type="file" id="formFile" />
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">AppVersion</label>
+                <input class="form-control" type="text" name="androidapp" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">IOSAppVersion</label>
+                <input class="form-control" type="text" name="iosapp" />
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Approved Amout Cutoff Date</label>
+                <input type="date" id="aacd" name="aacd" required />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">FTS UserID</label>
+                <input class="form-control" type="text" name="ftsid" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">FTS Password</label>
+                <input class="form-control" type="password" id="ftspassword" />
+              </div>
+            </div>
+            <button type="submit" class="primary_btn">Save</button>
+            <button type="reset" class="primary_btn cancel ms-3 me-3">
+              Cancel x
+            </button>
+          </form>
+        </div>
+      </section>
+      <footer-component></footer-component>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/javascript.js"></script>
+  </body>
+</html>
