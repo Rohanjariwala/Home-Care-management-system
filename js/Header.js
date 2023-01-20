@@ -83,6 +83,10 @@ class Header extends HTMLElement {
                    <li><a href="../setup/Skills.html">Skills</a></li>
                    <li><a href="../setup/prior-authorization-status.html">Prior Authorization Status</a></li>
                    <li><a href="../setup/payment-cycle-sheet.html">Payment Cycle Sheet</a></li>
+                   <li><a href="../setup/company.html">Company</a></li>
+                   <li><a href="../setup/tasks.html">Tasks</a></li>
+                   <li><a href="../setup/task-status.html">Task Status</a></li>
+                   <li><a href="../setup/payment-status.html">Payment Status</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav_links has_arrow">Security</a></li>
