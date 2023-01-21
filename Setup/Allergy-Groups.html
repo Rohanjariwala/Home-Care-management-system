@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Status</title>
+    <title>Allergy Groups</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,59 +19,33 @@
   <body>
     <main id="main">
       <header-component></header-component>
-      <section id="task-status">
+      <section id="allergy-groups">
         <div class="banner text-center">
           <div class="sub_head">Setup</div>
-          <h1 class="main_head">Task Status</h1>
+          <h1 class="main_head">Allergy Groups</h1>
         </div>
         <div class="container">
           <div class="form_boxlayout">
-            <table id="table" class="table" data-pagination="true" class="mb-5">
-              <thead>
-                <tr>
-                  <th scope="col" class="top-left-border">Status</th>
-                  <th scope="col" class="top-right-border">Description</th>
-                </tr>
-              </thead>
-              <tbody class="text-center">
-                <tr>
-                  <td scope="row" class="text-center">active</td>
-                  <td>active</td>
-                </tr>
-                <tr>
-                  <td scope="row" class="text-center">cancel</td>
-                  <td>cancel</td>
-                </tr>
-                <tr>
-                  <td scope="row" class="text-center">dones</td>
-                  <td>done</td>
-                </tr>
-                <tr>
-                  <td scope="row" class="text-center">pending</td>
-                  <td>pending</td>
-                </tr>
-              </tbody>
-            </table>
             <label
-              class="form-label text-center d-block mt-5"
+              class="form-label text-center d-block mt-4"
               style="font-weight: 700"
-              >Add / Edit Task Status</label
+              >Allergy Group</label
             >
             <form>
               <div class="row">
                 <div class="col-md-4">
                   <div class="box-solid box_label top-left-border">
-                    <label class="form-label">Status</label>
+                    <label class="form-label">Name</label>
                   </div>
                 </div>
                 <div class="col-md-8">
                   <div class="box-solid box-input top-right-border">
-                    <input class="form-control" type="text" name="status" />
+                    <input class="form-control" type="text" name="name" />
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="box-solid box_label">
-                    <label class="form-label">Description</label>
+                    <label class="form-label">Description </label>
                   </div>
                 </div>
                 <div class="col-md-8">
@@ -79,7 +53,7 @@
                     <input
                       class="form-control"
                       type="text"
-                      name="description"
+                      name="description "
                     />
                   </div>
                 </div>
@@ -92,7 +66,6 @@
                     </button>
                   </div>
                 </div>
-
                 <div class="col-md-6">
                   <div class="box-solid button-space bottom-right-border">
                     <button type="reset" class="primary_btn cancel me-3">
@@ -102,6 +75,66 @@
                 </div>
               </div>
             </form>
+            <table id="table" class="table" data-pagination="true" class="mb-5">
+              <thead>
+                <tr>
+                  <th scope="col" class="top-left-border">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Created</th>
+                  <th scope="col">CreatedBy</th>
+                  <th scope="col">Updated</th>
+                  <th scope="col" class="top-right-border">UpdatedBy</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <td scope="row" class="text-center">1</td>
+                  <td>food</td>
+                  <td>food</td>
+                  <td>6/5/2022 9:18:00 am</td>
+                  <td>sasha vaysberg</td>
+                  <td>1/1/1900 12:00:00 am</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="text-center">2</td>
+                  <td>nature/ seasonal</td>
+                  <td>nature/ seasonal</td>
+                  <td>6/5/2022 9:18:00 am</td>
+                  <td>sasha vaysberg</td>
+                  <td>1/1/1900 12:00:00 am</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="text-center">3</td>
+                  <td>pet</td>
+                  <td>pet</td>
+                  <td>6/5/2022 9:18:00 am</td>
+                  <td>sasha vaysberg</td>
+                  <td>1/1/1900 12:00:00 am</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="text-center">4</td>
+                  <td>medication</td>
+                  <td>medication</td>
+                  <td>6/5/2022 9:18:00 am</td>
+                  <td>sasha vaysberg</td>
+                  <td>1/1/1900 12:00:00 am</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="text-center">5</td>
+                  <td>others</td>
+                  <td>others</td>
+                  <td>6/5/2022 9:18:00 am</td>
+                  <td>sasha vaysberg</td>
+                  <td>1/1/1900 12:00:00 am</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

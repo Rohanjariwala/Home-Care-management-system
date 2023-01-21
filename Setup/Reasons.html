@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Status</title>
+    <title>Reasons</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,36 +19,56 @@
   <body>
     <main id="main">
       <header-component></header-component>
-      <section id="task-status">
+      <section id="reasons">
         <div class="banner text-center">
           <div class="sub_head">Setup</div>
-          <h1 class="main_head">Task Status</h1>
+          <h1 class="main_head">Reasons</h1>
         </div>
         <div class="container">
           <div class="form_boxlayout">
             <table id="table" class="table" data-pagination="true" class="mb-5">
               <thead>
                 <tr>
-                  <th scope="col" class="top-left-border">Status</th>
-                  <th scope="col" class="top-right-border">Description</th>
+                  <th scope="col" class="top-left-border">Reason</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Created</th>
+                  <th scope="col">Created By</th>
+                  <th scope="col">Updated</th>
+                  <th scope="col" class="top-right-border">Updated By</th>
                 </tr>
               </thead>
               <tbody class="text-center">
                 <tr>
-                  <td scope="row" class="text-center">active</td>
-                  <td>active</td>
+                  <td scope="row" class="text-center">hospital</td>
+                  <td>hospital stay</td>
+                  <td>9/22/2015 6:36 pm</td>
+                  <td>host</td>
+                  <td>9/22/2015 6:36 pm</td>
+                  <td>host</td>
                 </tr>
                 <tr>
-                  <td scope="row" class="text-center">cancel</td>
-                  <td>cancel</td>
+                  <td scope="row" class="text-center">nursing home</td>
+                  <td>nursing home</td>
+                  <td>9/22/2015 6:36 pm</td>
+                  <td>host</td>
+                  <td>9/22/2015 6:36 pm</td>
+                  <td>host</td>
                 </tr>
                 <tr>
-                  <td scope="row" class="text-center">dones</td>
-                  <td>done</td>
+                  <td scope="row" class="text-center"></td>
+                  <td></td>
+                  <td>12/15/2022 1:30 pm</td>
+                  <td>waleed_3091</td>
+                  <td>12/15/2022 1:30 pm</td>
+                  <td>waleed_3091</td>
                 </tr>
                 <tr>
-                  <td scope="row" class="text-center">pending</td>
-                  <td>pending</td>
+                  <td scope="row" class="text-center"></td>
+                  <td></td>
+                  <td>12/15/2022 1:30 pm</td>
+                  <td>waleed_3091</td>
+                  <td>12/15/2022 1:30 pm</td>
+                  <td>waleed_3091</td>
                 </tr>
               </tbody>
             </table>
@@ -61,12 +81,12 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="box-solid box_label top-left-border">
-                    <label class="form-label">Status</label>
+                    <label class="form-label">Reason</label>
                   </div>
                 </div>
                 <div class="col-md-8">
                   <div class="box-solid box-input top-right-border">
-                    <input class="form-control" type="text" name="status" />
+                    <input class="form-control" type="text" name="reason" />
                   </div>
                 </div>
                 <div class="col-md-4">
