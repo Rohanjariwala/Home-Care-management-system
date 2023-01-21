@@ -421,7 +421,7 @@ input[type="file"]::after {
   font-family: var(--Montserrat);
   font-weight: 600;
   color: var(--black);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem;
   border: 1px solid rgba(8, 52, 115, 0.3);
 }
 .form_boxlayout table tbody tr:nth-child(even) {

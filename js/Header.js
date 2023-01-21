@@ -87,6 +87,15 @@ class Header extends HTMLElement {
                    <li><a href="../setup/tasks.html">Tasks</a></li>
                    <li><a href="../setup/task-status.html">Task Status</a></li>
                    <li><a href="../setup/payment-status.html">Payment Status</a></li>
+                   <li><a href="../setup/source.html">Source</a></li>
+                   <li><a href="../setup/reasons.html">Reasons</a></li>
+                   <li><a href="../setup/priorities.html">Priorities</a></li>
+                   <li><a href="../setup/revenue-codes.html">Revenue Code</a></li>
+                   <li><a href="../setup/source-of-admission.html">Source Of Admission</a></li>
+                   <li><a href="../setup/covid-symptoms.html">Covid Symptoms</a></li>
+                   <li><a href="../setup/concern-status.html">Concern Status</a></li>
+                   <li><a href="../setup/transfer-type.html">Transfer Type</a></li>
+                   <li><a href="../setup/allergy-groups.html">Allergy Groups</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav_links has_arrow">Security</a></li>
