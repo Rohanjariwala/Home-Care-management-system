@@ -228,3 +228,35 @@
   border-top-right-radius: 8px;
 }
 /** debtsreport page css **/
+/** user online css **/
+#users-online .new_head img {
+  width: 2.125rem;
+  height: 2.125rem;
+  background: var(--p_blue);
+  padding: 5px;
+  border-radius: 6px;
+}
+#users-online .new_head .Online_heading {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+  margin-left: 12px;
+}
+#users-online .info {
+  padding-left: 50px;
+}
+#users-online .info_list {
+  display: flex;
+  align-items: center;
+}
+#users-online .info_text {
+  margin-left: 13px;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+  color: #000;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+/** user online css **/

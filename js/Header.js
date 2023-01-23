@@ -69,7 +69,7 @@ class Header extends HTMLElement {
                 </ul>
             </li>
             <li><a href="#" class="nav_links has_arrow">Setup</a>
-                <ul class="Inner_menu">
+                <ul class="Inner_menu long">
                    <li><a href="../setup/account-status.html">Account Status</a></li>
                    <li><a href="../setup/account-type.html">Account Type</a></li>
                    <li><a href="../setup/language.html">Language</a></li>
@@ -96,10 +96,19 @@ class Header extends HTMLElement {
                    <li><a href="../setup/concern-status.html">Concern Status</a></li>
                    <li><a href="../setup/transfer-type.html">Transfer Type</a></li>
                    <li><a href="../setup/allergy-groups.html">Allergy Groups</a></li>
+                   <li><a href="../setup/vitals-list.html">Vitals List</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="nav_links has_arrow">Security</a></li>
-            <li><a href="#" class="nav_links has_arrow">Audit</a></li>
+            <li><a href="#" class="nav_links has_arrow">Security</a>
+                <ul class="Inner_menu">
+                  <li><a href="../security/agency-management.html">Agency Management</a></li>
+                  <li><a href="../security/department-management.html">Department Management</a></li>
+                  <li><a href="../security/role-management.html">Role Management</a></li>
+                  <li><a href="../security/user-management.html">User Management</a></li>
+                  <li><a href="../security/users-online.html">Users Online</a></li>
+                </ul>
+            </li>
+            <li><a href="../audit.html" class="nav_links">Audit</a></li>
             <li><a href="#" class="nav_links has_arrow">Feedback</a></li>
           </ul>
         </nav>

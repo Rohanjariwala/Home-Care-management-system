@@ -84,11 +84,34 @@ hr {
   border-radius: 0.5rem;
   text-decoration: none;
   border: none;
+  display: flex;
+  align-items: center;
 }
 .primary_btn.outline {
   border: 1px solid var(--p_blue);
   background: var(--white);
   color: var(--p_blue);
+}
+button.primary_btn.icon:before {
+  content: "";
+  width: 0.813rem;
+  height: 0.813rem;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  margin-right: 9px;
+}
+button.primary_btn.icon.plus-before:before {
+  background: url(../images/plus.png);
+}
+button.primary_btn.icon.edit-before:before {
+  background: url(../images/edit.png);
+  width: 1.063rem;
+  height: 1.063rem;
+}
+button.primary_btn.icon.arrow-before:before {
+  background: url(../images/arrow.png);
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .cancel {
   background: var(--red);
@@ -97,6 +120,7 @@ hr {
   display: flex;
   justify-content: center;
 }
+
 .data_btn {
   padding: 0.813rem 0.75rem;
   background: rgba(8, 52, 115, 0.1);
@@ -209,6 +233,10 @@ Header #nav_menu li .Inner_menu {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
+}
+Header #nav_menu li .Inner_menu.long {
+  max-height: 450px;
+  overflow-y: auto;
 }
 Header #nav_menu li .Inner_menu a {
   padding: 0.5rem 0.75rem;
