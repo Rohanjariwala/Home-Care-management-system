@@ -109,7 +109,7 @@ class Header extends HTMLElement {
                 </ul>
             </li>
             <li><a href="../audit.html" class="nav_links">Audit</a></li>
-            <li><a href="#" class="nav_links has_arrow">Feedback</a></li>
+            <li><a href="../feedback.html" class="nav_links">Feedback</a></li>
           </ul>
         </nav>
         <div class="header_bottom d-flex justify-content-between">

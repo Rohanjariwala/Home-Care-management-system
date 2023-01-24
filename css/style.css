@@ -260,3 +260,15 @@
   font-family: "Montserrat";
 }
 /** user online css **/
+/** providors page **/
+
+#providers .tab-btn {
+  padding: 0.75rem;
+}
+/** providors page **/
+/** feedback page **/
+#feedback form {
+  max-width: 662px;
+  margin: 0 auto;
+}
+/** feedback page **/
