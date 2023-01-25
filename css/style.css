@@ -272,3 +272,137 @@
   margin: 0 auto;
 }
 /** feedback page **/
+/** calender page **/
+#calender {
+  padding: 0 15px;
+}
+#calender .solid_design {
+  background: rgba(52, 93, 153, 0.1);
+  border: 1px solid var(--p_blue);
+}
+#calender .internal_chat {
+  display: grid;
+  place-items: center;
+  height: 5rem;
+  background: rgba(52, 93, 153, 0.1);
+  border: 1px solid var(--p_blue);
+  border-radius: 8px 8px 0px 0px;
+  font-size: 1.25rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: var(--p_blue);
+  margin-bottom: 4px;
+}
+#calender .member_part {
+  padding: 10px;
+  margin-bottom: 4px;
+}
+#calender .member_inner {
+  display: flex;
+  align-items: center;
+}
+#calender .member_inner .num {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  background: var(--white);
+  border-radius: 50%;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  font-family: var(--Montserrat);
+  font-weight: 600;
+  color: var(--black);
+  margin-right: 12px;
+}
+#calender .member_inner .name {
+  font-size: 1rem;
+  line-height: 1.188rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: var(--black);
+}
+#calender .member_inner {
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#calender .member.active .member_inner {
+  background: var(--p_blue);
+}
+#calender .member.active .name {
+  color: var(--white);
+}
+#calender .membername {
+  padding: 1.125rem 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  background: var(--p_blue);
+  color: #fff;
+  font-family: var(--Montserrat);
+  font-weight: 600;
+}
+#calender .chat_box {
+  padding: 10px;
+  height: 365px;
+}
+#calender .chat_box input {
+  border: none !important;
+  height: 56px;
+  box-shadow: none !important;
+  border-radius: 14px;
+}
+#calender .text_field {
+  position: relative;
+}
+.chat_arrow {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 4px;
+  top: 3px;
+  background: var(--p_blue);
+  border-radius: 14px;
+}
+#calender .text_field img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#calender .message {
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 14px;
+  background: rgba(8, 52, 115, 0.2);
+  border-radius: 20px 0px 20px 20px;
+  max-width: 16.5rem;
+  margin-left: auto;
+}
+#calender .time {
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #000;
+  margin-top: 7px;
+}
+#calender .right_message {
+  text-align: right;
+}
+#calender .left_message {
+  text-align: left;
+}
+#calender .left_message .message {
+  background: var(--white);
+  border-radius: 0px 20px 20px 20px;
+  margin-right: auto;
+  margin-left: 0;
+}
+#calender .chat_container {
+  margin-bottom: 27px;
+}
+/** calender page **/
