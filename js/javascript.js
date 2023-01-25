@@ -6,6 +6,21 @@ document.querySelectorAll("#nav_menu a").forEach((link) => {
   }
 });
 /** menu active link **/
+var tabLink = document.querySelectorAll(".member");
+
+tabLink.forEach(function (item) {
+  item.addEventListener(
+    "click",
+    function () {
+      tabLink.forEach(function (item) {
+        item.classList.remove("active");
+      });
+      item.classList.add("active");
+    },
+    false
+  );
+});
+
 /** table pagination **/
 var $table = document.getElementById("table"),
   $n = 9,
