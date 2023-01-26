@@ -271,6 +271,30 @@
   max-width: 662px;
   margin: 0 auto;
 }
+.feedback_comment_section .text {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: var(--Montserrat);
+  font-weight: 600;
+}
+.review {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--p_blue);
+}
+.feedback_comment_section .text.date {
+  font-weight: 500;
+}
+.feedback_comment_section .paragrph_text {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: var(--Montserrat);
+  font-weight: 600;
+}
+.feedback_comment_section .paragrph_text a {
+  color: var(--p_blue);
+  display: inline-block;
+}
 /** feedback page **/
 /** calender page **/
 #calender {
