@@ -83,10 +83,3 @@ function pageButtons($pCount, $cur) {
   return $buttons;
 }
 /** table pagination **/
-
-function classToggle() {
-  var menu = document.querySelector(".hidden_div");
-  this.classList.toggle("active");
-  menu.classList.toggle("show");
-}
-document.querySelector(".advance_btn").addEventListener("click", classToggle);

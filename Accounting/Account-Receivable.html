@@ -274,5 +274,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/javascript.js"></script>
+    <script>
+      function classToggle() {
+        var menu = document.querySelector(".hidden_div");
+        this.classList.toggle("active");
+        menu.classList.toggle("show");
+      }
+      document
+        .querySelector(".advance_btn")
+        .addEventListener("click", classToggle);
+    </script>
   </body>
 </html>
