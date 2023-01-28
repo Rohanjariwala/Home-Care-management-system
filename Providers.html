@@ -25,7 +25,11 @@
           <h1 class="main_head">TFCSB</h1>
         </div>
         <div class="container">
-          <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+          <ul
+            class="nav nav-pills mb-4 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
             <li class="nav-item me-3" role="presentation">
               <button
                 class="nav-link primary_btn tab-btn active"
@@ -136,8 +140,9 @@
                 aria-selected="false"
               >
                 Registration
+              </button>
             </li>
-<li class="nav-item me-3" role="presentation">
+            <li class="nav-item me-3" role="presentation">
               <button
                 class="nav-link primary_btn tab-btn"
                 id="pills-mobile-tab"
@@ -151,7 +156,7 @@
                 Mobile
               </button>
             </li>
-<li class="nav-item me-3" role="presentation">
+            <li class="nav-item me-3" role="presentation">
               <button
                 class="nav-link primary_btn tab-btn"
                 id="pills-activity-tab"
@@ -165,7 +170,7 @@
                 Activity
               </button>
             </li>
-<li class="nav-item me-3" role="presentation">
+            <li class="nav-item me-3" role="presentation">
               <button
                 class="nav-link primary_btn tab-btn"
                 id="pills-licenses-tab"
@@ -375,8 +380,10 @@
                   <button type="button" class="primary_btn ms-3 me-3">
                     View All
                   </button>
-                  <a href="../new-client.html" class="primary_btn outline ms-3"
-                    >New Client</a
+                  <a
+                    href="../new-providers.html"
+                    class="primary_btn outline ms-3"
+                    >New Providers</a
                   >
                 </div>
               </form>
@@ -585,7 +592,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -594,10 +601,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male1"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male1">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -605,12 +612,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female1"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female1"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -619,44 +626,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>
@@ -871,7 +894,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -880,10 +903,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male2"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male2">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -891,12 +914,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female2"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female2"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -905,44 +928,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>
@@ -1157,7 +1196,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -1166,10 +1205,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male3"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male3">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -1177,12 +1216,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female3"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female3"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -1191,44 +1230,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>
@@ -1443,7 +1498,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -1452,10 +1507,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male4"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male4">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -1463,12 +1518,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female4"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female4"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -1477,44 +1532,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>
@@ -1729,7 +1800,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -1738,10 +1809,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male5"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male5">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -1749,12 +1820,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female6"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female6"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -1763,44 +1834,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>
@@ -2015,7 +2102,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -2024,10 +2111,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male7"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male7">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -2035,12 +2122,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female7"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female7"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -2049,44 +2136,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>
@@ -2301,7 +2404,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -2310,10 +2413,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male8"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male8">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -2321,12 +2424,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female8"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female8"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -2335,44 +2438,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>
@@ -2587,7 +2706,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -2596,10 +2715,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male9"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male9">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -2607,12 +2726,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female9"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female9"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -2621,44 +2740,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>
@@ -2669,7 +2804,7 @@
                 <button type="submit" class="primary_btn me-3">Continue</button>
               </div>
             </div>
- <div
+            <div
               class="tab-pane fade"
               id="pills-licenses"
               role="tabpanel"
@@ -2873,7 +3008,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -2882,10 +3017,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male10"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male10">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -2893,12 +3028,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female10"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female10"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -2907,44 +3042,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>
@@ -2955,7 +3106,7 @@
                 <button type="submit" class="primary_btn me-3">Continue</button>
               </div>
             </div>
- <div
+            <div
               class="tab-pane fade"
               id="pills-activity"
               role="tabpanel"
@@ -3159,7 +3310,7 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Sex *</label>
+                      <label class="form-label">Sex</label>
                     </div>
                     <div class="col-6">
                       <div class="row">
@@ -3168,10 +3319,10 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="male"
-                              id="male"
+                              name="gender"
+                              id="male11"
                             />
-                            <label class="form-label" for="male"> Male </label>
+                            <label class="form-label" for="male11">Male</label>
                           </div>
                         </div>
                         <div class="col">
@@ -3179,12 +3330,12 @@
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="female"
-                              id="female"
+                              name="gender"
+                              id="female11"
                             />
-                            <label class="form-label" for="female">
-                              Female
-                            </label>
+                            <label class="form-label" for="female11"
+                              >Female</label
+                            >
                           </div>
                         </div>
                         <div class="col"></div>
@@ -3193,44 +3344,60 @@
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Facility * :</label>
+                      <label class="form-label">Facility</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Facility</option>
-                        <option value="1">TFC Service Bureau</option>
-                        <option value="2">
+                        <option value="-1">Select Facility</option>
+                        <option value="3">
                           Care One License Home Care Agency, Inc.
                         </option>
-                        <option value="3">
-                          Grand Manor Nursing & Rehabilitation Center
+                        <option value="2">
+                          Grand Manor Nursing &amp; Rehabilitation Center
                         </option>
-                        <option value="3">Isabella Geriatric Center</option>
+                        <option value="5">Isabella Geriatric Center</option>
+                        <option value="7">
+                          Majestic Touch Home Care Services
+                        </option>
+                        <option value="1">TFC Providers Network</option>
+                        <option selected="selected" value="0">
+                          TFC Service Bureau
+                        </option>
+                        <option value="4">
+                          Trinamco, Inc. (DBA A Plus Care, Inc.)
+                        </option>
+                        <option value="6">
+                          Universal Home Care of New York, Inc.
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="row align-items-center mb-3">
                     <div class="col-6 text-end">
-                      <label class="form-label">Source * :</label>
+                      <label class="form-label">Profession</label>
                     </div>
                     <div class="col-6">
                       <select
                         class="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Source</option>
-                        <option value="1">Allmed - 110-20 Jamaica Ave</option>
-                        <option value="2">
-                          AllMed - 97-24 63rd Rd. Rego Park
+                        <option value="0">Select Profession</option>
+                        <option value="1">LPN License Practical Nurse</option>
+                        <option value="2">RN Registered Nurse</option>
+                        <option value="3">CNA Certified Nurses Aid</option>
+                        <option value="4">OT Occupational Therapist</option>
+                        <option value="5">ST Speech Therapist</option>
+                        <option value="6">MA Medical Assistance</option>
+                        <option value="7">HHA Home Health Aid</option>
+                        <option value="8">PCA Personal Care Aide</option>
+                        <option value="9">
+                          Companion Companion Care-Adult
                         </option>
-                        <option value="3">
-                          Allmed - Medical 820 St. Anns Ave.
-                        </option>
-                        <option value="3">
-                          Argus / Access - 760 E. 156th St.
+                        <option value="10">
+                          CDPAS Consumer Directed Personal Assistance Service
                         </option>
                       </select>
                     </div>

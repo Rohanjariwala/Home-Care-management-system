@@ -35,6 +35,7 @@
   src: local(""), url("../fonts/montserrat-v25-latin-700.woff2") format("woff2"),
     url("../fonts/montserrat-v25-latin-700.woff") format("woff");
 }
+html,
 body {
   background: #fafcff;
   overflow-x: hidden;
