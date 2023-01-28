@@ -133,6 +133,12 @@
   font-weight: 600;
   color: #2512ff;
 }
+#client .custom-width {
+  width: 20%;
+}
+#client .table_wrapper {
+  overflow-x: auto;
+}
 /** client page css **/
 /** prior-authorizations page css **/
 #prior-authorizations .status {
