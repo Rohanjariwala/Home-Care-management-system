@@ -72,6 +72,7 @@ class Header extends HTMLElement {
                 <ul class="Inner_menu long">
                    <li><a href="../setup/account-status.html">Account Status</a></li>
                    <li><a href="../setup/account-type.html">Account Type</a></li>
+                   <li><a href="../setup/paycor.html">Paycor</a></li>
                    <li><a href="../setup/language.html">Language</a></li>
                    <li><a href="../setup/patient-type.html">Patient Type</a></li>
                    <li><a href="../setup/payment-method.html">Payment Method</a></li>

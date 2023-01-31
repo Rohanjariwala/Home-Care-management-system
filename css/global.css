@@ -507,6 +507,18 @@ div#buttons input.active {
   background: rgba(8, 52, 115, 0.3) !important;
 }
 /** table pagination layout **/
+/** long table **/
+.long_table {
+  overflow-x: auto;
+}
+.long_table table {
+  width: 6000px;
+  max-width: initial;
+}
+.long_table .close img {
+  width: 22px;
+}
+/** long table **/
 /** footer css **/
 footer-component footer {
   padding: 1.25rem;
