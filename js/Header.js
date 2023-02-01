@@ -80,11 +80,13 @@ class Header extends HTMLElement {
                    <li><a href="../setup/provider-types.html">Provider Types</a></li>
                    <li><a href="../setup/service.html">Service</a></li>
                    <li><a href="../setup/service-type.html">Service Type</a></li>
+                   <li><a href="../setup/paycor-rates.html">Paycor Rates</a></li>
                    <li><a href="../setup/documents-by-payee.html">Documents By Payee</a></li>
                    <li><a href="../setup/Skills.html">Skills</a></li>
                    <li><a href="../setup/prior-authorization-status.html">Prior Authorization Status</a></li>
                    <li><a href="../setup/payment-cycle-sheet.html">Payment Cycle Sheet</a></li>
                    <li><a href="../setup/company.html">Company</a></li>
+                   <li><a href="../setup/facility.html">Facility</a></li>
                    <li><a href="../setup/tasks.html">Tasks</a></li>
                    <li><a href="../setup/task-status.html">Task Status</a></li>
                    <li><a href="../setup/payment-status.html">Payment Status</a></li>
