@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facility</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/Header.js" type="text/javascript"></script>
+    <script src="../js/footer.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main id="main">
+      <header-component></header-component>
+      <section id="facility">
+        <div class="banner text-center">
+          <div class="sub_head">Setup</div>
+          <h1 class="main_head">Facility</h1>
+        </div>
+        <div class="container">
+          <label
+            class="form-label text-center d-block mt-5"
+            style="font-weight: 700"
+            >Add / Edit Facility</label
+          >
+          <form class="mb-5">
+            <div class="row">
+              <div class="col-3 mb-3">
+                <label class="form-label">FacilityName *</label>
+                <input class="form-control" type="text" name="facilityname" />
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">WebSite</label>
+                <input class="form-control" type="text" name="website" />
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">TaxID *</label>
+                <input class="form-control" type="text" name="taxid" />
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">PFI_LIC</label>
+                <input class="form-control" type="text" name="pfilic" />
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">NPI *</label>
+                <input class="form-control" type="text" name="npi" />
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">Address * </label>
+                <input class="form-control" type="text" name="address" />
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">Zip * </label>
+                <div class="row">
+                  <div class="col-6">
+                    <input class="form-control" type="text" name="zip" />
+                  </div>
+
+                  <div class="col-6">
+                    <input class="form-control" type="text" name="zip" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">Phone 1 * </label>
+                <input class="form-control" type="text" name="phone1" />
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">Phone2 </label>
+                <input class="form-control" type="text" name="phone2" />
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">Fax </label>
+                <input class="form-control" type="text" name="fax" />
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">Email * </label>
+                <input class="form-control" type="email" name="email" />
+              </div>
+              <div class="col-12 mb-3">
+                <label class="form-label">Memo</label>
+                <textarea
+                  class="form-control"
+                  type="text"
+                  name="apt"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="col-3 mb-3">
+                <label class="form-label">RequestDays </label>
+                <input class="form-control" type="email" name="requestdays	" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <div class="form-check w-auto">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="active"
+                    checked
+                  />
+                  <label class="form-label" for="active">Active</label>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="form-check w-auto">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="mobile-monitored"
+                    checked
+                  />
+                  <label class="form-label" for="mobile-monitored	"
+                    >Mobile Monitored
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="form-check w-auto">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="str"
+                    checked
+                  />
+                  <label class="form-label" for="str"
+                    >Send Timesheet Reminder
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="form-check w-auto">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="sc"
+                    checked
+                  />
+                  <label class="form-label" for="sc">Single Claim </label>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Facility Code </label>
+                <input class="form-control" type="text" name="facilitycode	" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Administrator Name </label>
+                <input class="form-control" type="text" name="an" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Administrator Email </label>
+                <input class="form-control" type="email" name="ae" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Administrator Phone </label>
+                <input class="form-control" type="text" name="ap" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">ServiceType </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="0">Select Service</option>
+                  <option selected="selected" value="1">Billing Service</option>
+                  <option value="2">W. Account Management</option>
+                  <option value="3">Employee</option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Company *</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="0">Company</option>
+                  <option value="3">Gold And Silver Aging Home Care</option>
+                  <option value="8">test</option>
+                  <option value="7">Majestic Touch Home Care Services</option>
+                  <option value="4">TFC Providers Network</option>
+                  <option selected="selected" value="1">
+                    TFC Service Bureau, Inc.
+                  </option>
+                  <option value="2">Trinamco (DBA A + Care, Inc.)</option>
+                  <option value="6">
+                    University Home Care of New York, Inc.
+                  </option>
+                  <option value="5">Unity Home Care Agency, Inc.</option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Logo </label>
+                <input class="form-control" type="file" id="formFile" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Timesheet </label>
+                <input class="form-control" type="file" id="formFile" />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label">QB File Name </label>
+                <input class="form-control" type="text" name="qbfilename" />
+              </div>
+            </div>
+            <div class="btn-group text-center mt-5">
+              <button type="submit" class="primary_btn me-3">Add +</button>
+              <button type="reset" class="primary_btn ms-3 cancel">
+                Cancel X
+              </button>
+            </div>
+          </form>
+          <div class="form_boxlayout long_table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="top-left-border">FacilityName</th>
+                  <th scope="col">WebSite</th>
+                  <th scope="col">TaxID</th>
+                  <th scope="col">PFI_LIC</th>
+                  <th scope="col">NPI</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">City</th>
+                  <th scope="col">State</th>
+                  <th scope="col">County</th>
+                  <th scope="col">Zip</th>
+                  <th scope="col">Zip 4</th>
+                  <th scope="col">Phone1</th>
+                  <th scope="col">Phone1</th>
+                  <th scope="col">Fax</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Service</th>
+                  <th scope="col">RequestDays</th>
+                  <th scope="col">Company</th>
+                  <th scope="col">Created</th>
+                  <th scope="col">CreatedBy</th>
+                  <th scope="col">Updated</th>
+                  <th scope="col">UpdatedBy</th>
+                  <th scope="col">Active</th>
+                  <th scope="col">Send Timesheet Reminder</th>
+                  <th scope="col">Mobile Monitored</th>
+                  <th scope="col">Memo</th>
+                  <th scope="col">UniqueID</th>
+                  <th scope="col">AdministratorName</th>
+                  <th scope="col">AdministratorEmail</th>
+                  <th scope="col">AdministratorPhone</th>
+                  <th scope="col">QBFileName</th>
+                  <th scope="col">Logo</th>
+                  <th scope="col" class="top-right-border">Timesheet</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <td>tfc providers network</td>
+                  <td></td>
+                  <td>454938967</td>
+                  <td></td>
+                  <td>1992065213</td>
+                  <td>1 summit ave. 3rd floor</td>
+                  <td>white plains</td>
+                  <td>ny</td>
+                  <td>westchester</td>
+                  <td>10606</td>
+                  <td></td>
+                  <td>(718) 519-7672</td>
+                  <td></td>
+                  <td>7185594709</td>
+                  <td>rfleurantin@tfcsb.com</td>
+                  <td>w. account management</td>
+                  <td>30</td>
+                  <td>tfc service bureau, inc.</td>
+                  <td>8/1/2011</td>
+                  <td>rfleurantin</td>
+                  <td>6/29/2019</td>
+                  <td>sasha</td>
+                  <td>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="active"
+                      checked
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="active"
+                      checked
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="active"
+                      disabled
+                    />
+                  </td>
+                  <td>nurse registry</td>
+                  <td>72107</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>tfc providers network, corp 2019</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>grand manor nursing & rehabilitation center</td>
+                  <td></td>
+                  <td>0</td>
+                  <td></td>
+                  <td>0</td>
+                  <td>700 white plains rd</td>
+                  <td>bronx</td>
+                  <td>ny</td>
+                  <td>bronx</td>
+                  <td>10473</td>
+                  <td></td>
+                  <td>(718) 518-8892</td>
+                  <td></td>
+                  <td></td>
+                  <td>lgong-amarante@grandmanor.org</td>
+                  <td>billing service</td>
+                  <td>30</td>
+                  <td>tfc service bureau, inc.</td>
+                  <td>9/6/2012</td>
+                  <td>rfleurantin</td>
+                  <td>7/27/2017</td>
+                  <td>host</td>
+                  <td>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="active"
+                      checked
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="active"
+                      checked
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="active"
+                      disabled
+                    />
+                  </td>
+                  <td>staffing contract</td>
+                  <td>953705</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>tfc providers network</td>
+                  <td></td>
+                  <td>454938967</td>
+                  <td></td>
+                  <td>1992065213</td>
+                  <td>1 summit ave. 3rd floor</td>
+                  <td>white plains</td>
+                  <td>ny</td>
+                  <td>westchester</td>
+                  <td>10606</td>
+                  <td></td>
+                  <td>(718) 519-7672</td>
+                  <td></td>
+                  <td>7185594709</td>
+                  <td>rfleurantin@tfcsb.com</td>
+                  <td>w. account management</td>
+                  <td>30</td>
+                  <td>tfc service bureau, inc.</td>
+                  <td>8/1/2011</td>
+                  <td>rfleurantin</td>
+                  <td>6/29/2019</td>
+                  <td>sasha</td>
+                  <td>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="active"
+                      checked
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="active"
+                      checked
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="active"
+                      disabled
+                    />
+                  </td>
+                  <td>nurse registry</td>
+                  <td>72107</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>tfc providers network, corp 2019</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <footer-component></footer-component>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/javascript.js"></script>
+  </body>
+</html>
