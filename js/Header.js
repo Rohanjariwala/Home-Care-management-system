@@ -97,6 +97,7 @@ class Header extends HTMLElement {
                    <li><a href="../setup/source-of-admission.html">Source Of Admission</a></li>
                    <li><a href="../setup/covid-symptoms.html">Covid Symptoms</a></li>
                    <li><a href="../setup/concern-status.html">Concern Status</a></li>
+                   <li><a href="../setup/clock-in-status.html">Clock In Status</a></li>
                    <li><a href="../setup/transfer-type.html">Transfer Type</a></li>
                    <li><a href="../setup/allergy-groups.html">Allergy Groups</a></li>
                    <li><a href="../setup/vitals-list.html">Vitals List</a></li>
