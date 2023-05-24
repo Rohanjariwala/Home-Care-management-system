@@ -21,6 +21,17 @@ tabLink.forEach(function (item) {
   );
 });
 
+/** form hide show js */
+
+const btn = document.getElementById("form_click");
+const form = document.querySelector("form");
+btn.addEventListener("click", click);
+
+function click() {
+  form.classList.remove("hide");
+  form.classList.add("show");
+}
+
 /** table pagination **/
 var $table = document.getElementById("table"),
   $n = 9,

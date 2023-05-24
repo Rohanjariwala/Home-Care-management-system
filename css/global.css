@@ -49,6 +49,12 @@ a {
   text-decoration: none;
   display: block;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
 .btn-group {
   margin-top: 72px;
   width: 100%;

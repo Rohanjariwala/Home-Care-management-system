@@ -40,19 +40,63 @@
               </select>
             </div>
           </div>
-          <div class="btn-group justify-content-start mt-5">
+          <div class="btn-group justify-content-start mt-5" id="form_click">
             <button type="button" class="primary_btn icon plus-before">
               New
             </button>
             <button
               type="button"
               class="primary_btn ms-3 me-3 icon edit-before"
+              id="form_click"
             >
               Edit
             </button>
             <button type="button" class="primary_btn icon arrow-before">
               Department Management
             </button>
+          </div>
+          <div class="form_boxlayout">
+            <form style="margin: 70px auto 0 0" class="hide">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="box-solid box_label top-left-border">
+                    <label class="form-label">Agency ID:</label>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="box-solid box-input top-right-border">
+                    <input class="form-control" type="text" name="aid" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box-solid box_label">
+                    <label class="form-label">Agency Name:</label>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="box-solid box-input">
+                    <input class="form-control" type="text" name="Agencyname" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="box-solid button-space bottom-left-border">
+                    <button type="submit" class="primary_btn me-3">
+                      Save +
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="box-solid button-space bottom-right-border">
+                    <button type="reset" class="primary_btn cancel me-3">
+                      Cancel x
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </section>
